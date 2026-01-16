@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+  background-color: #f8fafc;
+  min-height: 100vh;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.3s ease-out;
+}
+
+@keyframes pulse-slow {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.7; }
+}
+
+.animate-pulse-slow {
+  animation: pulse-slow 2s ease-in-out infinite;
+}
+
+/* Question card styles */
+.question-card {
+  @apply bg-white rounded-xl shadow-sm border border-gray-100 p-6 transition-all duration-200;
+}
+
+.question-card:hover {
+  @apply shadow-md border-primary-200;
+}
+
+/* Option button styles */
+.option-btn {
+  @apply w-full text-left p-4 rounded-lg border-2 transition-all duration-200 flex items-start gap-3;
+}
+
+.option-btn.default {
+  @apply border-gray-200 hover:border-primary-300 hover:bg-primary-50;
+}
+
+.option-btn.selected {
+  @apply border-primary-500 bg-primary-50;
+}
+
+.option-btn.correct {
+  @apply border-green-500 bg-green-50;
+}
+
+.option-btn.incorrect {
+  @apply border-red-500 bg-red-50;
+}
+
+/* Timer styles */
+.timer-warning {
+  @apply text-warning animate-pulse;
+}
+
+.timer-danger {
+  @apply text-danger animate-pulse-slow;
+}

@@ -1,0 +1,3583 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Demo User",
+      "email": "demo@gateprep.com",
+      "password": "$2a$10$ptVEcH.XZtYsdE15YP463epugw5Qe8FJ7JmyFi8dBL0.B9fkWv6Uq",
+      "branch": "Computer Science (CS)",
+      "createdAt": "2026-01-14T23:37:38.678Z"
+    },
+    {
+      "id": 2,
+      "name": "raju",
+      "email": "admin3@gateprep.com",
+      "password": "$2a$10$mWcpSJQKvKsvAL.MvpBKoOO1o8pM351127trvUZEOk./TJ7WxEVOK",
+      "branch": "Computer Science (CS)",
+      "createdAt": "2026-01-14T23:41:10.707Z"
+    }
+  ],
+  "admins": [
+    {
+      "id": 1,
+      "name": "Admin",
+      "email": "admin@gateprep.com",
+      "password": "$2a$10$kCaVGygXSA8yDugNBnykQeCNZD7IG4zW/2Jxb/l2uIDL8s0XDxrY2",
+      "role": "superadmin",
+      "createdAt": "2026-01-14T23:37:38.898Z"
+    }
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "subject": "data-structures",
+      "topic": "trees",
+      "question": "What is the time complexity of searching for an element in a balanced Binary Search Tree?",
+      "options": [
+        "O(1)",
+        "O(log n)",
+        "O(n)",
+        "O(n log n)"
+      ],
+      "correctAnswer": 1,
+      "explanation": "In a balanced BST, the height is O(log n). Since search operation traverses from root to leaf in the worst case, the time complexity is O(log n).",
+      "difficulty": "Easy",
+      "year": null,
+      "marks": 1,
+      "negativeMarks": 0.33
+    },
+    {
+      "id": 2,
+      "subject": "data-structures",
+      "topic": "trees",
+      "question": "Which of the following is NOT a property of a Binary Search Tree?",
+      "options": [
+        "Left subtree contains only nodes with keys less than the node's key",
+        "Right subtree contains only nodes with keys greater than the node's key",
+        "Both left and right subtrees must also be binary search trees",
+        "The tree must be complete"
+      ],
+      "correctAnswer": 3,
+      "explanation": "A BST does not need to be complete. A complete binary tree is one where all levels except possibly the last are completely filled.",
+      "difficulty": "Medium",
+      "year": null,
+      "marks": 1,
+      "negativeMarks": 0.33
+    },
+    {
+      "id": 3,
+      "subject": "data-structures",
+      "topic": "trees",
+      "question": "The worst-case time complexity of inserting n elements into an initially empty Binary Search Tree is:",
+      "options": [
+        "O(n)",
+        "O(n log n)",
+        "O(n²)",
+        "O(log n)"
+      ],
+      "correctAnswer": 2,
+      "explanation": "If elements are inserted in sorted order, the BST degenerates into a linked list. Each insertion takes O(n) time, so n insertions take O(n²) time.",
+      "difficulty": "Medium",
+      "year": "GATE 2019",
+      "marks": 2,
+      "negativeMarks": 0.66
+    },
+    {
+      "id": 4,
+      "subject": "data-structures",
+      "topic": "trees",
+      "question": "What is the minimum number of nodes in an AVL tree of height 3?",
+      "options": [
+        "5",
+        "7",
+        "9",
+        "12"
+      ],
+      "correctAnswer": 1,
+      "explanation": "The minimum number of nodes in an AVL tree follows N(h) = N(h-1) + N(h-2) + 1. For h=3: N(3) = N(2) + N(1) + 1 = 4 + 2 + 1 = 7.",
+      "difficulty": "Hard",
+      "year": "GATE 2018",
+      "marks": 2,
+      "negativeMarks": 0.66
+    },
+    {
+      "id": 5,
+      "subject": "data-structures",
+      "topic": "trees",
+      "question": "In a complete binary tree with n nodes, what is the maximum height?",
+      "options": [
+        "log₂(n)",
+        "⌊log₂(n)⌋",
+        "⌈log₂(n+1)⌉ - 1",
+        "n-1"
+      ],
+      "correctAnswer": 2,
+      "explanation": "In a complete binary tree, the height is ⌈log₂(n+1)⌉ - 1 or equivalently ⌊log₂(n)⌋.",
+      "difficulty": "Medium",
+      "year": null,
+      "marks": 1,
+      "negativeMarks": 0.33
+    },
+    {
+      "id": 6,
+      "subject": "data-structures",
+      "topic": "arrays-linked-lists",
+      "question": "What is the time complexity of inserting an element at the beginning of an array?",
+      "options": [
+        "O(1)",
+        "O(log n)",
+        "O(n)",
+        "O(n²)"
+      ],
+      "correctAnswer": 2,
+      "explanation": "To insert at the beginning, all existing elements must be shifted right, which takes O(n) time.",
+      "difficulty": "Easy",
+      "year": null,
+      "marks": 1,
+      "negativeMarks": 0.33
+    },
+    {
+      "id": 7,
+      "subject": "data-structures",
+      "topic": "arrays-linked-lists",
+      "question": "Which operation has O(1) time complexity in a doubly linked list if we have a pointer to the node?",
+      "options": [
+        "Search",
+        "Deletion",
+        "Finding middle element",
+        "Sorting"
+      ],
+      "correctAnswer": 1,
+      "explanation": "In a doubly linked list, if we have a pointer to the node, deletion takes O(1) as we can directly update prev and next pointers.",
+      "difficulty": "Easy",
+      "year": "GATE 2020",
+      "marks": 1,
+      "negativeMarks": 0.33
+    },
+    {
+      "id": 8,
+      "subject": "data-structures",
+      "topic": "sorting-searching",
+      "question": "Which sorting algorithm has the best average case time complexity?",
+      "options": [
+        "Bubble Sort O(n²)",
+        "Merge Sort O(n log n)",
+        "Insertion Sort O(n²)",
+        "Selection Sort O(n²)"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Merge Sort has O(n log n) average case time complexity which is better than O(n²) of other options.",
+      "difficulty": "Easy",
+      "year": null,
+      "marks": 1,
+      "negativeMarks": 0.33
+    },
+    {
+      "id": 9,
+      "subject": "data-structures",
+      "topic": "sorting-searching",
+      "question": "What is the recurrence relation for Merge Sort?",
+      "options": [
+        "T(n) = T(n-1) + O(n)",
+        "T(n) = 2T(n/2) + O(n)",
+        "T(n) = T(n/2) + O(1)",
+        "T(n) = 2T(n-1) + O(1)"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Merge Sort divides the array into two halves (2T(n/2)) and then merges them (O(n)).",
+      "difficulty": "Medium",
+      "year": "GATE 2017",
+      "marks": 1,
+      "negativeMarks": 0.33
+    },
+    {
+      "id": 10,
+      "subject": "data-structures",
+      "topic": "graphs",
+      "question": "What is the time complexity of BFS traversal of a graph with V vertices and E edges?",
+      "options": [
+        "O(V)",
+        "O(E)",
+        "O(V + E)",
+        "O(V × E)"
+      ],
+      "correctAnswer": 2,
+      "explanation": "BFS visits each vertex once and each edge once (in undirected graph, twice for directed), giving O(V + E).",
+      "difficulty": "Medium",
+      "year": null,
+      "marks": 1,
+      "negativeMarks": 0.33
+    },
+    {
+      "id": 11,
+      "subject": "data-structures",
+      "topic": "graphs",
+      "question": "Which algorithm is used to find the shortest path in a weighted graph with negative edge weights (but no negative cycles)?",
+      "options": [
+        "Dijkstra's Algorithm",
+        "Bellman-Ford Algorithm",
+        "Floyd-Warshall Algorithm",
+        "Prim's Algorithm"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Bellman-Ford algorithm can handle graphs with negative edge weights and can detect negative cycles.",
+      "difficulty": "Medium",
+      "year": "GATE 2019",
+      "marks": 2,
+      "negativeMarks": 0.66
+    },
+    {
+      "id": 12,
+      "subject": "dbms",
+      "topic": "normalization",
+      "question": "Which normal form deals with multivalued dependencies?",
+      "options": [
+        "2NF",
+        "3NF",
+        "BCNF",
+        "4NF"
+      ],
+      "correctAnswer": 3,
+      "explanation": "4NF (Fourth Normal Form) specifically deals with multivalued dependencies.",
+      "difficulty": "Medium",
+      "year": "GATE 2019",
+      "marks": 1,
+      "negativeMarks": 0.33
+    },
+    {
+      "id": 13,
+      "subject": "dbms",
+      "topic": "normalization",
+      "question": "A relation is in BCNF if and only if every determinant is a:",
+      "options": [
+        "Primary key",
+        "Candidate key",
+        "Foreign key",
+        "Super key"
+      ],
+      "correctAnswer": 3,
+      "explanation": "A relation is in BCNF if for every functional dependency X → Y, X is a super key.",
+      "difficulty": "Hard",
+      "year": "GATE 2018",
+      "marks": 2,
+      "negativeMarks": 0.66
+    },
+    {
+      "id": 14,
+      "subject": "dbms",
+      "topic": "sql",
+      "question": "Which SQL clause is used to filter groups?",
+      "options": [
+        "WHERE",
+        "HAVING",
+        "GROUP BY",
+        "ORDER BY"
+      ],
+      "correctAnswer": 1,
+      "explanation": "HAVING clause is used to filter groups after GROUP BY, while WHERE filters rows before grouping.",
+      "difficulty": "Easy",
+      "year": null,
+      "marks": 1,
+      "negativeMarks": 0.33
+    },
+    {
+      "id": 15,
+      "subject": "dbms",
+      "topic": "sql",
+      "question": "The SQL query \"SELECT * FROM table WHERE column IN (SELECT column FROM table2)\" uses which type of subquery?",
+      "options": [
+        "Scalar subquery",
+        "Column subquery",
+        "Row subquery",
+        "Table subquery"
+      ],
+      "correctAnswer": 1,
+      "explanation": "A column subquery returns a single column with multiple rows, used with IN, ANY, ALL operators.",
+      "difficulty": "Medium",
+      "year": "GATE 2020",
+      "marks": 1,
+      "negativeMarks": 0.33
+    },
+    {
+      "id": 16,
+      "subject": "dbms",
+      "topic": "transactions",
+      "question": "Which property of ACID ensures that a transaction is treated as a single unit?",
+      "options": [
+        "Atomicity",
+        "Consistency",
+        "Isolation",
+        "Durability"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Atomicity ensures that either all operations of a transaction are completed or none are.",
+      "difficulty": "Easy",
+      "year": "GATE 2021",
+      "marks": 1,
+      "negativeMarks": 0.33
+    },
+    {
+      "id": 17,
+      "subject": "dbms",
+      "topic": "transactions",
+      "question": "Two-phase locking protocol ensures:",
+      "options": [
+        "Deadlock freedom",
+        "Serializability",
+        "Both deadlock freedom and serializability",
+        "Neither"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Two-phase locking ensures conflict serializability but does NOT prevent deadlocks.",
+      "difficulty": "Medium",
+      "year": "GATE 2017",
+      "marks": 2,
+      "negativeMarks": 0.66
+    },
+    {
+      "id": 18,
+      "subject": "operating-systems",
+      "topic": "process-management",
+      "question": "Which scheduling algorithm can cause starvation?",
+      "options": [
+        "Round Robin",
+        "FCFS",
+        "SJF",
+        "All of the above"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Shortest Job First (SJF) can cause starvation for longer processes if shorter ones keep arriving.",
+      "difficulty": "Medium",
+      "year": null,
+      "marks": 1,
+      "negativeMarks": 0.33
+    },
+    {
+      "id": 19,
+      "subject": "operating-systems",
+      "topic": "process-management",
+      "question": "The maximum number of processes that can be in the ready state at any time in a system with n processes is:",
+      "options": [
+        "n",
+        "n-1",
+        "n-2",
+        "1"
+      ],
+      "correctAnswer": 1,
+      "explanation": "At any time, at least one process must be either running (on CPU) or blocked, so maximum n-1 processes can be ready.",
+      "difficulty": "Medium",
+      "year": "GATE 2018",
+      "marks": 1,
+      "negativeMarks": 0.33
+    },
+    {
+      "id": 20,
+      "subject": "operating-systems",
+      "topic": "memory-management",
+      "question": "In virtual memory, thrashing occurs when:",
+      "options": [
+        "CPU utilization is very high",
+        "The system spends more time paging than executing",
+        "Multiple processes are in deadlock",
+        "Memory fragmentation is high"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Thrashing occurs when the system is constantly swapping pages in and out, spending more time on paging than actual execution.",
+      "difficulty": "Medium",
+      "year": "GATE 2018",
+      "marks": 2,
+      "negativeMarks": 0.66
+    },
+    {
+      "id": 21,
+      "subject": "operating-systems",
+      "topic": "memory-management",
+      "question": "Page size is typically chosen to be a power of 2 because:",
+      "options": [
+        "It makes memory allocation simpler",
+        "It allows easy translation between logical and physical addresses using bit manipulation",
+        "It reduces external fragmentation",
+        "It increases TLB hit rate"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Power of 2 page sizes allow logical address to physical address translation using simple bit manipulation (masking and concatenation).",
+      "difficulty": "Easy",
+      "year": "GATE 2019",
+      "marks": 1,
+      "negativeMarks": 0.33
+    },
+    {
+      "id": 22,
+      "subject": "operating-systems",
+      "topic": "deadlocks",
+      "question": "The Banker's algorithm is used for:",
+      "options": [
+        "Deadlock detection",
+        "Deadlock avoidance",
+        "Deadlock prevention",
+        "Deadlock recovery"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Banker's algorithm is a deadlock avoidance algorithm that checks if granting a resource request would leave the system in a safe state.",
+      "difficulty": "Easy",
+      "year": "GATE 2020",
+      "marks": 1,
+      "negativeMarks": 0.33
+    },
+    {
+      "id": 23,
+      "subject": "operating-systems",
+      "topic": "deadlocks",
+      "question": "Which of the following is NOT a necessary condition for deadlock?",
+      "options": [
+        "Mutual exclusion",
+        "Hold and wait",
+        "Preemption",
+        "Circular wait"
+      ],
+      "correctAnswer": 2,
+      "explanation": "No preemption (not preemption) is a necessary condition for deadlock. If resources can be preempted, deadlock can be avoided.",
+      "difficulty": "Easy",
+      "year": null,
+      "marks": 1,
+      "negativeMarks": 0.33
+    },
+    {
+      "id": 24,
+      "subject": "computer-networks",
+      "topic": "osi-tcp",
+      "question": "In TCP/IP, the protocol responsible for routing packets is:",
+      "options": [
+        "TCP",
+        "UDP",
+        "IP",
+        "ICMP"
+      ],
+      "correctAnswer": 2,
+      "explanation": "IP (Internet Protocol) is responsible for routing packets from source to destination across networks.",
+      "difficulty": "Easy",
+      "year": null,
+      "marks": 1,
+      "negativeMarks": 0.33
+    },
+    {
+      "id": 25,
+      "subject": "computer-networks",
+      "topic": "osi-tcp",
+      "question": "Which layer of the OSI model is responsible for end-to-end error recovery and flow control?",
+      "options": [
+        "Network layer",
+        "Transport layer",
+        "Session layer",
+        "Data link layer"
+      ],
+      "correctAnswer": 1,
+      "explanation": "The Transport layer (Layer 4) is responsible for end-to-end error recovery, flow control, and reliable data delivery.",
+      "difficulty": "Easy",
+      "year": "GATE 2021",
+      "marks": 1,
+      "negativeMarks": 0.33
+    },
+    {
+      "id": 26,
+      "subject": "computer-networks",
+      "topic": "transport-layer",
+      "question": "Which protocol provides reliable data transfer?",
+      "options": [
+        "UDP",
+        "IP",
+        "TCP",
+        "ICMP"
+      ],
+      "correctAnswer": 2,
+      "explanation": "TCP (Transmission Control Protocol) provides reliable, ordered, and error-checked delivery of data.",
+      "difficulty": "Easy",
+      "year": "GATE 2019",
+      "marks": 1,
+      "negativeMarks": 0.33
+    },
+    {
+      "id": 27,
+      "subject": "computer-networks",
+      "topic": "transport-layer",
+      "question": "In TCP, the sender window size is determined by:",
+      "options": [
+        "Receiver window only",
+        "Congestion window only",
+        "Minimum of receiver window and congestion window",
+        "Maximum of receiver window and congestion window"
+      ],
+      "correctAnswer": 2,
+      "explanation": "TCP sender window = min(receiver window, congestion window) to ensure both flow control and congestion control.",
+      "difficulty": "Medium",
+      "year": "GATE 2018",
+      "marks": 2,
+      "negativeMarks": 0.66
+    },
+    {
+      "id": 28,
+      "subject": "toc",
+      "topic": "finite-automata",
+      "question": "Which of the following is true about DFA and NFA?",
+      "options": [
+        "DFA is more powerful than NFA",
+        "NFA is more powerful than DFA",
+        "DFA and NFA are equivalent in power",
+        "DFA cannot be converted to NFA"
+      ],
+      "correctAnswer": 2,
+      "explanation": "DFA and NFA are equivalent in power - any language accepted by an NFA can also be accepted by some DFA.",
+      "difficulty": "Medium",
+      "year": "GATE 2017",
+      "marks": 1,
+      "negativeMarks": 0.33
+    },
+    {
+      "id": 29,
+      "subject": "toc",
+      "topic": "finite-automata",
+      "question": "The number of states in the minimal DFA for the language L = {w | w has an odd number of 1s} over Σ = {0, 1} is:",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Two states are sufficient: one for even count of 1s (initial) and one for odd count of 1s (final).",
+      "difficulty": "Medium",
+      "year": "GATE 2019",
+      "marks": 1,
+      "negativeMarks": 0.33
+    },
+    {
+      "id": 30,
+      "subject": "toc",
+      "topic": "cfg-pda",
+      "question": "Context-free languages are closed under:",
+      "options": [
+        "Union",
+        "Intersection",
+        "Complementation",
+        "All of the above"
+      ],
+      "correctAnswer": 0,
+      "explanation": "CFLs are closed under union but NOT under intersection or complementation.",
+      "difficulty": "Hard",
+      "year": "GATE 2018",
+      "marks": 2,
+      "negativeMarks": 0.66
+    },
+    {
+      "id": 31,
+      "subject": "toc",
+      "topic": "cfg-pda",
+      "question": "Which of the following languages is NOT context-free?",
+      "options": [
+        "{aⁿbⁿ | n ≥ 0}",
+        "{aⁿbⁿcⁿ | n ≥ 0}",
+        "{aⁿbᵐ | n ≤ m}",
+        "{ww^R | w ∈ {a,b}*}"
+      ],
+      "correctAnswer": 1,
+      "explanation": "{aⁿbⁿcⁿ} requires matching three different counts which cannot be done with a single stack (PDA).",
+      "difficulty": "Hard",
+      "year": "GATE 2020",
+      "marks": 2,
+      "negativeMarks": 0.66
+    },
+    {
+      "id": 32,
+      "subject": "algorithms",
+      "topic": "dynamic-programming",
+      "question": "The time complexity of the dynamic programming solution for the 0/1 Knapsack problem with n items and capacity W is:",
+      "options": [
+        "O(n)",
+        "O(nW)",
+        "O(n²)",
+        "O(2ⁿ)"
+      ],
+      "correctAnswer": 1,
+      "explanation": "The DP solution uses a 2D table of size n × W, filling each cell in O(1) time, giving O(nW) complexity.",
+      "difficulty": "Medium",
+      "year": "GATE 2019",
+      "marks": 2,
+      "negativeMarks": 0.66
+    },
+    {
+      "id": 33,
+      "subject": "algorithms",
+      "topic": "dynamic-programming",
+      "question": "Which of the following problems CANNOT be solved using dynamic programming?",
+      "options": [
+        "Longest Common Subsequence",
+        "Matrix Chain Multiplication",
+        "Travelling Salesman Problem",
+        "Quick Sort"
+      ],
+      "correctAnswer": 3,
+      "explanation": "Quick Sort is a divide and conquer algorithm that doesn't have overlapping subproblems, which is required for DP.",
+      "difficulty": "Medium",
+      "year": null,
+      "marks": 1,
+      "negativeMarks": 0.33
+    },
+    {
+      "id": 34,
+      "subject": "algorithms",
+      "topic": "greedy-algorithms",
+      "question": "Which of the following is NOT solved optimally by a greedy approach?",
+      "options": [
+        "Fractional Knapsack",
+        "0/1 Knapsack",
+        "Activity Selection",
+        "Huffman Coding"
+      ],
+      "correctAnswer": 1,
+      "explanation": "0/1 Knapsack cannot be solved optimally by greedy approach because we cannot take fractions of items.",
+      "difficulty": "Easy",
+      "year": "GATE 2018",
+      "marks": 1,
+      "negativeMarks": 0.33
+    },
+    {
+      "id": 35,
+      "subject": "compiler-design",
+      "topic": "parsing",
+      "question": "LL(1) parser is a type of:",
+      "options": [
+        "Bottom-up parser",
+        "Top-down parser",
+        "Both top-down and bottom-up",
+        "Neither"
+      ],
+      "correctAnswer": 1,
+      "explanation": "LL(1) is a top-down parser that reads input Left to right, produces Leftmost derivation, using 1 lookahead symbol.",
+      "difficulty": "Easy",
+      "year": null,
+      "marks": 1,
+      "negativeMarks": 0.33
+    },
+    {
+      "id": 36,
+      "subject": "compiler-design",
+      "topic": "parsing",
+      "question": "LR(1) parser is more powerful than SLR(1) parser because:",
+      "options": [
+        "It uses more lookahead symbols",
+        "It considers the context in which each item was derived",
+        "It parses in both directions",
+        "It can handle left recursion"
+      ],
+      "correctAnswer": 1,
+      "explanation": "LR(1) is more powerful because it uses lookahead sets specific to each item, considering the context in which the item was derived.",
+      "difficulty": "Hard",
+      "year": "GATE 2017",
+      "marks": 2,
+      "negativeMarks": 0.66
+    },
+    {
+      "id": 37,
+      "subject": "digital-logic",
+      "topic": "boolean-algebra",
+      "question": "The simplified expression for F = AB + A'B + AB' is:",
+      "options": [
+        "A + B",
+        "A'B'",
+        "AB",
+        "A + B'"
+      ],
+      "correctAnswer": 0,
+      "explanation": "F = AB + A'B + AB' = B(A + A') + AB' = B + AB' = B + A (by absorption law complement).",
+      "difficulty": "Medium",
+      "year": "GATE 2020",
+      "marks": 1,
+      "negativeMarks": 0.33
+    },
+    {
+      "id": 38,
+      "subject": "digital-logic",
+      "topic": "combinational-circuits",
+      "question": "A 4-to-1 multiplexer can be implemented using:",
+      "options": [
+        "Two 2-to-1 multiplexers",
+        "Three 2-to-1 multiplexers",
+        "Four 2-to-1 multiplexers",
+        "One 2-to-1 multiplexer"
+      ],
+      "correctAnswer": 1,
+      "explanation": "A 4-to-1 MUX needs three 2-to-1 MUXes: two at the first level to select pairs, one at the second level to select final output.",
+      "difficulty": "Medium",
+      "year": "GATE 2019",
+      "marks": 2,
+      "negativeMarks": 0.66
+    },
+    {
+      "id": 39,
+      "subject": "computer-organization",
+      "topic": "cpu-architecture",
+      "question": "In a pipelined processor with k stages, the maximum speedup achievable is:",
+      "options": [
+        "k",
+        "k-1",
+        "k+1",
+        "2k"
+      ],
+      "correctAnswer": 0,
+      "explanation": "In ideal conditions with no pipeline hazards, a k-stage pipeline achieves speedup of k compared to non-pipelined execution.",
+      "difficulty": "Easy",
+      "year": "GATE 2018",
+      "marks": 1,
+      "negativeMarks": 0.33
+    },
+    {
+      "id": 40,
+      "subject": "computer-organization",
+      "topic": "memory-hierarchy",
+      "question": "If cache hit rate is 90% and cache access time is 10ns, memory access time is 100ns, the average memory access time is:",
+      "options": [
+        "19ns",
+        "55ns",
+        "91ns",
+        "100ns"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Average access time = Hit rate × Cache time + Miss rate × Memory time = 0.9×10 + 0.1×100 = 9 + 10 = 19ns.",
+      "difficulty": "Medium",
+      "year": "GATE 2021",
+      "marks": 2,
+      "negativeMarks": 0.66
+    },
+    {
+      "id": 41,
+      "subject": "data-structures",
+      "topic": "arrays-linked-lists",
+      "question": "Carry ONE mark Each",
+      "options": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "difficulty": "Easy",
+      "year": "GATE 2025",
+      "marks": 1,
+      "negativeMarks": 0.33,
+      "createdAt": "2026-01-14T23:54:19.640Z",
+      "createdBy": 1
+    },
+    {
+      "id": 42,
+      "subject": "computer-organization",
+      "topic": "io-systems",
+      "question": "Despite his initial hesitation, Rehman’s _________ to contribute to the success of  the project never wavere",
+      "options": [
+        "ambivalence",
+        "satisfaction",
+        "resolve",
+        ""
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "difficulty": "Easy",
+      "year": "GATE 2025",
+      "marks": 1,
+      "negativeMarks": 0.33,
+      "createdAt": "2026-01-14T23:54:19.656Z",
+      "createdBy": 1
+    },
+    {
+      "id": 43,
+      "subject": "computer-organization",
+      "topic": "io-systems",
+      "question": "Bird : Nest :: Bee : _______  Select the correct option to complete the analogy.",
+      "options": [
+        "Kennel",
+        "Hammock",
+        "Hive",
+        ""
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "difficulty": "Easy",
+      "year": "GATE 2025",
+      "marks": 1,
+      "negativeMarks": 0.33,
+      "createdAt": "2026-01-14T23:54:19.665Z",
+      "createdBy": 1
+    },
+    {
+      "id": 44,
+      "subject": "compiler-design",
+      "topic": "parsing",
+      "question": "If   𝑃 𝑒 𝑥   =   𝑄 𝑒 − 𝑥   for all real values of   𝑥 , which one of the following statements is  true?",
+      "options": [
+        "𝑃   =   𝑄   =   0",
+        "𝑃   =   𝑄   =   1",
+        "𝑃   =   1 ;   𝑄   =   − 1",
+        ""
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "difficulty": "Easy",
+      "year": "GATE 2025",
+      "marks": 1,
+      "negativeMarks": 0.33,
+      "createdAt": "2026-01-14T23:54:19.674Z",
+      "createdBy": 1
+    },
+    {
+      "id": 45,
+      "subject": "digital-logic",
+      "topic": "boolean-algebra",
+      "question": "The   paper as   shown in the figure is folded to make a cube   where each square  corresponds to a particular face of the cube . Which one of the following options  correctly represents the cube?  Note: The figures shown are representative.",
+      "options": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "difficulty": "Easy",
+      "year": "GATE 2025",
+      "marks": 1,
+      "negativeMarks": 0.33,
+      "createdAt": "2026-01-14T23:54:19.686Z",
+      "createdBy": 1
+    },
+    {
+      "id": 46,
+      "subject": "digital-logic",
+      "topic": "boolean-algebra",
+      "question": "Let   𝑝 1   and   𝑝 2   denote two arbitrary prime numbers. Which one of the following  statements is correct for all values of   𝑝 1   and   𝑝 2 ?",
+      "options": [
+        "𝑝 1   +   𝑝 2   is not a prime number.",
+        "𝑝 1 𝑝 2   is not a prime number.",
+        "𝑝 1   +   𝑝 2   +   1   is a prime number.",
+        ""
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "difficulty": "Easy",
+      "year": "GATE 2025",
+      "marks": 1,
+      "negativeMarks": 0.33,
+      "createdAt": "2026-01-14T23:54:19.695Z",
+      "createdBy": 1
+    },
+    {
+      "id": 47,
+      "subject": "data-structures",
+      "topic": "arrays-linked-lists",
+      "question": "Carry TWO marks Each",
+      "options": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "difficulty": "Easy",
+      "year": "GATE 2025",
+      "marks": 1,
+      "negativeMarks": 0.33,
+      "createdAt": "2026-01-14T23:54:19.707Z",
+      "createdBy": 1
+    },
+    {
+      "id": 48,
+      "subject": "digital-logic",
+      "topic": "boolean-algebra",
+      "question": "Based only on the conversation below, identify the logically correct inference:  “Even if I had known that you were in the hospital, I would not have gone there to  see you”, Ramya told   Josephine.",
+      "options": [
+        "Ramya knew that Josephine was in the hospital.",
+        "Ramya did not know that Josephine was in the hospital.",
+        "Ramya and Josephine were once close friends; but now, they are not.",
+        ""
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "difficulty": "Easy",
+      "year": "GATE 2025",
+      "marks": 1,
+      "negativeMarks": 0.33,
+      "createdAt": "2026-01-14T23:54:19.717Z",
+      "createdBy": 1
+    },
+    {
+      "id": 49,
+      "subject": "digital-logic",
+      "topic": "boolean-algebra",
+      "question": "If IMAGE and FIELD are coded as FHBNJ and EMFJG respectively then, which  one among the given options is the most appropriate code for BEACH ?",
+      "options": [
+        "CEADP",
+        "IDBFC",
+        "JGIBC",
+        ""
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "difficulty": "Easy",
+      "year": "GATE 2025",
+      "marks": 1,
+      "negativeMarks": 0.33,
+      "createdAt": "2026-01-14T23:54:19.727Z",
+      "createdBy": 1
+    },
+    {
+      "id": 50,
+      "subject": "digital-logic",
+      "topic": "boolean-algebra",
+      "question": "Which one of the following options is correct for the given data in the table?  Iteration ( i )   0   1   2   3  Input ( I )   20   − 4   10   15  Output ( X )   20   16   26   41  Output ( Y )   20   − 80   − 800   − 12000  (A)   𝑋 ( 𝑖 )   =   𝑋 ( 𝑖   −   1 )   +   𝐼 ( 𝑖 ) ;   𝑌 ( 𝑖 )   =   𝑌 ( 𝑖   −   1 ) 𝐼 ( 𝑖 ) ;   𝑖   >   0  (B)   𝑋 ( 𝑖 )   =   𝑋 ( 𝑖   −   1 ) 𝐼 ( 𝑖 ) ;   𝑌 ( 𝑖 )   =   𝑌 ( 𝑖   −   1 )   +   𝐼 ( 𝑖 ) ;   𝑖   >   0  (C)   𝑋 ( 𝑖 )   =   𝑋 ( 𝑖   −   1 ) 𝐼 ( 𝑖 ) ;   𝑌 ( 𝑖 )   =   𝑌 ( 𝑖   −   1 ) 𝐼 ( 𝑖 ) ;   𝑖   >   0  (D)   𝑋 ( 𝑖 )   =   𝑋 ( 𝑖   −   1 )   +   𝐼 ( 𝑖 ) ;   𝑌 ( 𝑖 )   =   𝑌 ( 𝑖   −   1 ) 𝐼 ( 𝑖   −   1 ) ;   𝑖   >   0\n\nComputer Science and Information   Technology   (CS 2 )  Organising Institute:   IIT   Roorkee   Page   9   of   48",
+      "options": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "difficulty": "Easy",
+      "year": "GATE 2025",
+      "marks": 1,
+      "negativeMarks": 0.33,
+      "createdAt": "2026-01-14T23:54:19.736Z",
+      "createdBy": 1
+    },
+    {
+      "id": 51,
+      "subject": "digital-logic",
+      "topic": "boolean-algebra",
+      "question": "In the given figure, PQRS is a   square of side 2 cm and PLMN is a rectangle. The  corner L of the rectangle is on the side QR. Side MN of the rectangle passes through  the corner S of the square.  What is the area (in cm 2 )   of the rectangle PLMN?  Note: The figure shown is representative.",
+      "options": [
+        "2 √ 2",
+        "2",
+        "8",
+        ""
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "difficulty": "Easy",
+      "year": "GATE 2025",
+      "marks": 1,
+      "negativeMarks": 0.33,
+      "createdAt": "2026-01-14T23:54:19.745Z",
+      "createdBy": 1
+    },
+    {
+      "id": 52,
+      "subject": "digital-logic",
+      "topic": "boolean-algebra",
+      "question": "The diagram below shows a river system consisting of 7 segments, marked P, Q, R,  S, T, U, and V. It splits the land into 5 zones, marked Z1, Z2, Z3, Z4, and Z5. We  need to   connect these zones using the least number of bridges. Out of the following  options, which one is correct?  Note: The figure shown is representative.",
+      "options": [
+        "Bridges on P, Q, and T",
+        "Bridges on P,   Q, S, and T",
+        "Bridges on Q, R, T, and V",
+        ""
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "difficulty": "Easy",
+      "year": "GATE 2025",
+      "marks": 1,
+      "negativeMarks": 0.33,
+      "createdAt": "2026-01-14T23:54:19.753Z",
+      "createdBy": 1
+    },
+    {
+      "id": 53,
+      "subject": "data-structures",
+      "topic": "arrays-linked-lists",
+      "question": "5   Carry ONE mark Each",
+      "options": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "difficulty": "Easy",
+      "year": "GATE 2025",
+      "marks": 1,
+      "negativeMarks": 0.33,
+      "createdAt": "2026-01-14T23:54:19.765Z",
+      "createdBy": 1
+    },
+    {
+      "id": 54,
+      "subject": "compiler-design",
+      "topic": "parsing",
+      "question": "1   If   𝐴   =   ( 1   2  2   − 1 ) , then which   ONE   of the following is   𝐴 8   ?  (A)   ( 25   0  0   25 )  (B)   ( 125   0  0   125 )  (C)   ( 625   0  0   625 )  (D)   ( 3125   0  0   3125 )",
+      "options": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "difficulty": "Easy",
+      "year": "GATE 2025",
+      "marks": 1,
+      "negativeMarks": 0.33,
+      "createdAt": "2026-01-14T23:54:19.774Z",
+      "createdBy": 1
+    },
+    {
+      "id": 55,
+      "subject": "computer-organization",
+      "topic": "cpu-architecture",
+      "question": "The   value of   𝑥   such that   𝑥   >   1 ,   satisfying the equation   ∫   𝑡   ln   𝑡   𝑑𝑡   =   1  4  𝑥  1   is",
+      "options": [
+        "√ 𝑒",
+        "𝑒",
+        "𝑒 2",
+        ""
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "difficulty": "Easy",
+      "year": "GATE 2025",
+      "marks": 1,
+      "negativeMarks": 0.33,
+      "createdAt": "2026-01-14T23:54:19.784Z",
+      "createdBy": 1
+    },
+    {
+      "id": 56,
+      "subject": "data-structures",
+      "topic": "trees",
+      "question": "Consider a   binary tree   𝑇   in which   every node has   either zero or   two children.  Let   𝑛   >   0   be the number of nodes in   𝑇 .  Which   ONE of   the following is the number of nodes   in   𝑇   that have exactly two  children ?",
+      "options": [
+        "𝑛   −   2  2",
+        "𝑛   −   1  2",
+        "𝑛  2",
+        ""
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "difficulty": "Easy",
+      "year": "GATE 2025",
+      "marks": 1,
+      "negativeMarks": 0.33,
+      "createdAt": "2026-01-14T23:54:19.794Z",
+      "createdBy": 1
+    },
+    {
+      "id": 57,
+      "subject": "engineering-mathematics",
+      "topic": "linear-algebra",
+      "question": "Let   𝐿 ,   𝑀 ,   and   𝑁   be non - singular matrices of order 3 satisfying the equations  𝐿 2   =   𝐿 − 1   ,   𝑀   =   𝐿 8   and   𝑁   =   𝐿 2 .  Which ONE of the following is the value of the determinant of   ( 𝑀   −   𝑁 ) ?",
+      "options": [
+        "0",
+        "1",
+        "2",
+        "3"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "difficulty": "Easy",
+      "year": "GATE 2025",
+      "marks": 1,
+      "negativeMarks": 0.33,
+      "createdAt": "2026-01-14T23:54:19.803Z",
+      "createdBy": 1
+    },
+    {
+      "id": 58,
+      "subject": "digital-logic",
+      "topic": "boolean-algebra",
+      "question": "Let   𝑃 ( 𝑥 )   be an arbitrary predicate over the domain of natural numbers.  Which   ONE   of the following   statements   is TRUE?  (A)   ( 𝑃 ( 0 )   ∧   ( ∀ 𝑥   [ 𝑃 ( 𝑥 )   ⇒   𝑃 ( 𝑥   +   1 ) ] ) )   ⇒   ( ∀ 𝑥   𝑃 ( 𝑥 ) )  (B)   ( 𝑃 ( 0 )   ∧   ( ∀ 𝑥   [ 𝑃 ( 𝑥 )   ⇒   𝑃 ( 𝑥   −   1 ) ] ) )   ⇒   ( ∀ 𝑥   𝑃 ( 𝑥 ) )  (C)   ( 𝑃 ( 1000 )   ∧   ( ∀ 𝑥   [ 𝑃 ( 𝑥 )   ⇒   𝑃 ( 𝑥   −   1 ) ] ) )   ⇒   ( ∀ 𝑥   𝑃 ( 𝑥 ) )  (D)   ( 𝑃 ( 1000 )   ∧   ( ∀ 𝑥   [ 𝑃 ( 𝑥 )   ⇒   𝑃 ( 𝑥   +   1 ) ] ) )   ⇒   ( ∀ 𝑥   𝑃 ( 𝑥 ) )\n\nComputer Science and Information   Technology   (CS 2 )  Organising Institute:   IIT   Roorkee   Page   14   of   48",
+      "options": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "difficulty": "Easy",
+      "year": "GATE 2025",
+      "marks": 1,
+      "negativeMarks": 0.33,
+      "createdAt": "2026-01-14T23:54:19.813Z",
+      "createdBy": 1
+    },
+    {
+      "id": 59,
+      "subject": "computer-networks",
+      "topic": "osi-tcp",
+      "question": "Consider the following statements:  (i)   Address Resolution Protocol ( ARP )   provides a mapping from an IP  address to the corresponding hardware (link - layer) address.  (ii)   A single TCP segment from a sender S to a receiver R cannot carry both  data   from S to R   and   acknowledgement for a segment from R to S.  Which ONE of the following is CORRECT?  (A)   Both (i) and (ii) are   TRUE  (B)   (i) is   TRUE   and   (ii) is   FALSE  (C)   (i) is   FALSE   and   (ii) is   TRUE  (D)   Both (i) and (ii) are   FALSE\n\nComputer Science and Information   Technology   (CS 2 )  Organising Institute:   IIT   Roorkee   Page   15   of   48",
+      "options": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "difficulty": "Easy",
+      "year": "GATE 2025",
+      "marks": 1,
+      "negativeMarks": 0.33,
+      "createdAt": "2026-01-14T23:54:19.822Z",
+      "createdBy": 1
+    },
+    {
+      "id": 60,
+      "subject": "computer-networks",
+      "topic": "network-layer",
+      "question": "Consider the routing protocols given in   List I   and the names given in   List II :  List I   List II  (i)   Distance vector routing",
+      "options": [
+        "Dijkstra  For matching of items in   List I   with those in   List II,   which ONE of the following  options is   CORRECT ?",
+        "",
+        "",
+        ""
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "difficulty": "Easy",
+      "year": "GATE 2025",
+      "marks": 1,
+      "negativeMarks": 0.33,
+      "createdAt": "2026-01-14T23:54:19.832Z",
+      "createdBy": 1
+    },
+    {
+      "id": 61,
+      "subject": "computer-networks",
+      "topic": "network-layer",
+      "question": "A machine receives an IPv4 datagram. The protocol field of the IPv4 header has the  protocol number of a protocol X.  Which ONE of the following   is NOT a possible candidate   for X?  (A)   Internet Control Message Protocol (ICMP)  (B)   Internet Group   Management Protocol (IGMP)  (C)   Open Shortest Path First (OSPF)  (D)   Routing Information Protocol (RIP)\n\nComputer Science and Information   Technology   (CS 2 )  Organising Institute:   IIT   Roorkee   Page   17   of   48",
+      "options": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "difficulty": "Easy",
+      "year": "GATE 2025",
+      "marks": 1,
+      "negativeMarks": 0.33,
+      "createdAt": "2026-01-14T23:54:19.843Z",
+      "createdBy": 1
+    },
+    {
+      "id": 62,
+      "subject": "compiler-design",
+      "topic": "parsing",
+      "question": "Consider the   following C program :  #include   <stdio.h>  void   stringcopy(char   *,   char   *);  int   main(){  char   a[30]   =   \"@#Hello   World!\";  stringcopy(a,   a   +   2);  printf(\"%s \\ n\",",
+      "options": [
+        "@#Hello   World!",
+        "Hello   World!",
+        "ello   World!",
+        ""
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "difficulty": "Easy",
+      "year": "GATE 2025",
+      "marks": 1,
+      "negativeMarks": 0.33,
+      "createdAt": "2026-01-14T23:54:19.853Z",
+      "createdBy": 1
+    },
+    {
+      "id": 63,
+      "subject": "digital-logic",
+      "topic": "boolean-algebra",
+      "question": "0   Consider an unordered list of   𝑁   distinct   integers.  What is the minimum number of element   comparison s   required to find an integer  in the list   that   is   NOT   the largest   in the list ?",
+      "options": [
+        "1",
+        "𝑁   −   1",
+        "𝑁",
+        "2 𝑁   −   1"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "difficulty": "Easy",
+      "year": "GATE 2025",
+      "marks": 1,
+      "negativeMarks": 0.33,
+      "createdAt": "2026-01-14T23:54:19.862Z",
+      "createdBy": 1
+    },
+    {
+      "id": 64,
+      "subject": "compiler-design",
+      "topic": "code-optimization",
+      "question": "Consider the following statements about the use of backpatching in a compiler for  intermediate code generation:  (I)   Backpatching can be used to generate code for Boolean expression in  one pass.  (II)   Backpatching   can   be   used   to   generate   code   for   flow - of - control  statements in one pass.  Which ONE of the following options is CORRECT?  (A)   Only (I) is correct.  (B)   Only (II) is correct.  (C)   Both (I) and (II) are correct.  (D)   Neither (I) nor (II) is correct .\n\nComputer Science and Information   Technology   (CS 2 )  Organising Institute:   IIT   Roorkee   Page   19   of   48",
+      "options": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "difficulty": "Easy",
+      "year": "GATE 2025",
+      "marks": 1,
+      "negativeMarks": 0.33,
+      "createdAt": "2026-01-14T23:54:19.873Z",
+      "createdBy": 1
+    },
+    {
+      "id": 65,
+      "subject": "compiler-design",
+      "topic": "parsing",
+      "question": "Given the following syntax   directed translation rules:  Rule 1:   𝑅  →   𝐴𝐵   { 𝐵 .   𝑖   =   𝑅 .   𝑖   −   1 ;   𝐴 .   𝑖   =   𝐵 .   𝑖 ;   𝑅 .   𝑖   =   𝐴 .   𝑖   +   1 ;   }  Rule 2:   𝑃  →   𝐶𝐷   { 𝑃 .   𝑖   =   𝐶 .   𝑖   +   𝐷 .   𝑖 ;   𝐷 .   𝑖   =   𝐶 .   𝑖   +   2 ;   }  Rule 3:   𝑄  →   𝐸𝐹   { 𝑄 .   𝑖   =   𝐸 .   𝑖   +   𝐹 .   𝑖 ;   }  Which ONE is the   CORRECT   option among the following?",
+      "options": [
+        "Rule 1 is   S - attributed and L - attributed; Rule 2 is S - attributed and not L - attributed;  Rule 3 is neither S - attributed nor L - attributed",
+        "Rule 1 is neither S - attributed nor L - attributed; Rule 2 is S - attributed and   L -  attributed; Rule 3 is S - attributed and   L - attributed",
+        "Rule 1 is neither S - attributed nor L - attributed; Rule 2 is not S - attributed and  is   L - attributed; Rule 3 is S - attributed and L - attributed",
+        ""
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "difficulty": "Easy",
+      "year": "GATE 2025",
+      "marks": 1,
+      "negativeMarks": 0.33,
+      "createdAt": "2026-01-14T23:54:19.882Z",
+      "createdBy": 1
+    },
+    {
+      "id": 66,
+      "subject": "computer-networks",
+      "topic": "network-layer",
+      "question": "Consider a network that uses   Ethernet   and   IPv4. Assume   that   IPv4 headers   do   no t  use any   option s field .   E ach Ethernet frame can carry   a   maximum   of   1500 bytes in  its data field .   A UDP   segment is   transmitte",
+      "options": [
+        "5 fragments, 1488 bytes",
+        "6 fragments, 88 bytes",
+        "6 fragments, 108 bytes",
+        "6 fragments, 116 bytes"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "difficulty": "Easy",
+      "year": "GATE 2025",
+      "marks": 1,
+      "negativeMarks": 0.33,
+      "createdAt": "2026-01-14T23:54:19.891Z",
+      "createdBy": 1
+    },
+    {
+      "id": 67,
+      "subject": "compiler-design",
+      "topic": "parsing",
+      "question": "Which   ONE   of   the following   language s   is   a ccepted by a deterministic push down  automaton?",
+      "options": [
+        "Any regular language.",
+        "Any context - free language.",
+        "Any language accep ted by a non - deterministic push down automaton .",
+        ""
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "difficulty": "Easy",
+      "year": "GATE 2025",
+      "marks": 1,
+      "negativeMarks": 0.33,
+      "createdAt": "2026-01-14T23:54:19.901Z",
+      "createdBy": 1
+    },
+    {
+      "id": 68,
+      "subject": "toc",
+      "topic": "regular-languages",
+      "question": "Let   𝐺 1 ,   𝐺 2   be Context Free Grammars (CFGs) and   𝑅   be a regular expression. For a  grammar   𝐺 ,   let   𝐿 ( 𝐺 )   denote the   language generated by   𝐺 .  Which ONE among the following questions is decidable?  (A)   Is   𝐿 ( 𝐺 1 )   =   𝐿 ( 𝐺 2 ) ?  (B)   Is   𝐿 ( 𝐺 1 )   ∩   𝐿 ( 𝐺 2 )   =   ∅ ?  (C)   Is   𝐿 ( 𝐺 1 )   =   𝐿 ( 𝑅 ) ?  (D)   Is   𝐿 ( 𝐺 1 )   =   ∅ ?",
+      "options": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "difficulty": "Easy",
+      "year": "GATE 2025",
+      "marks": 1,
+      "negativeMarks": 0.33,
+      "createdAt": "2026-01-14T23:54:19.910Z",
+      "createdBy": 1
+    },
+    {
+      "id": 69,
+      "subject": "operating-systems",
+      "topic": "process-management",
+      "question": "Processes   𝑃 1 ,   𝑃 2 ,   𝑃 3 ,   𝑃 4   arrive in that order at times   0, 1, 2 ,   and 8   milliseconds  respectively , and have execution times of   10, 13, 6 , and 9 milliseconds   respectively.  Shortest Remaining Time   First (SRTF)   algorithm   is used as the CPU   scheduling  policy. Ignore context switching times.  Which ONE of the following   correctly gives the average turnaround time of the four  processes   in milliseconds ?",
+      "options": [
+        "22",
+        "15",
+        "37",
+        ""
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "difficulty": "Easy",
+      "year": "GATE 2025",
+      "marks": 1,
+      "negativeMarks": 0.33,
+      "createdAt": "2026-01-14T23:54:19.921Z",
+      "createdBy": 1
+    },
+    {
+      "id": 70,
+      "subject": "dbms",
+      "topic": "sql",
+      "question": "An audit of a banking transactions system has found that on an earlier occasion, two  joint holders of account   𝐴   attempted simultaneous transfers of Rs. 10000 each from  account   𝐴   to account   𝐵 . Both transactions read the same value ,   Rs . 11000 ,   as the  initial balance in   𝐴   and were allowed to go through.   𝐵   was credited Rs. 10000 twice.  𝐴   was debited only once and ended up with a balance of Rs. 1000.  Which   of   the   following properties   is/ are   certain to have been violated by the  system?",
+      "options": [
+        "Atomicity",
+        "Consistency",
+        "Isolation",
+        "Durability"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "difficulty": "Easy",
+      "year": "GATE 2025",
+      "marks": 1,
+      "negativeMarks": 0.33,
+      "createdAt": "2026-01-14T23:54:19.930Z",
+      "createdBy": 1
+    },
+    {
+      "id": 71,
+      "subject": "computer-organization",
+      "topic": "cpu-architecture",
+      "question": "Which of the following   is/ are part of an   Instruction Set Architecture of a processor?",
+      "options": [
+        "The size of the cache memory",
+        "The clock frequency of the processor",
+        "The number of cache memory levels",
+        ""
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "difficulty": "Easy",
+      "year": "GATE 2025",
+      "marks": 1,
+      "negativeMarks": 0.33,
+      "createdAt": "2026-01-14T23:54:19.940Z",
+      "createdBy": 1
+    },
+    {
+      "id": 72,
+      "subject": "data-structures",
+      "topic": "graphs",
+      "question": "Which of the following statements regarding Breadth First Search (BFS) and  Depth First Search (DFS) on an undirected simple graph   G   is/ are TRUE?",
+      "options": [
+        "A DFS tree   of   𝐺   is a Shortest Path tree   of   𝐺 .",
+        "Every non - tree edge of   G   with respect to a DFS tree is a forward/back edge.",
+        "",
+        ""
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "difficulty": "Easy",
+      "year": "GATE 2025",
+      "marks": 1,
+      "negativeMarks": 0.33,
+      "createdAt": "2026-01-14T23:54:19.950Z",
+      "createdBy": 1
+    },
+    {
+      "id": 73,
+      "subject": "toc",
+      "topic": "decidability",
+      "question": "Consider the two lists   List I   and   List II   given below :  For matching of items in   List I   with those in   List II ,   w hich of the following  option ( s )   is/are   CORRECT ?  List I   List II  (i )   Context free languages",
+      "options": [
+        "Closed under   intersection",
+        "",
+        "",
+        ""
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "difficulty": "Easy",
+      "year": "GATE 2025",
+      "marks": 1,
+      "negativeMarks": 0.33,
+      "createdAt": "2026-01-14T23:54:19.959Z",
+      "createdBy": 1
+    },
+    {
+      "id": 74,
+      "subject": "compiler-design",
+      "topic": "parsing",
+      "question": "Consider   the following logic circuit diagram .  W hich   is/ are   the   CORRECT   option ( s )   for the output function   𝐹 ?",
+      "options": [
+        "𝑋   𝑌 ̅ ̅ ̅ ̅ ̅",
+        "𝑋 ̅   +   𝑌 ̅   +   𝑋 𝑌 ̅",
+        "𝑋   𝑌 ̅ ̅ ̅ ̅ ̅   +   𝑋 ̅   +   𝑋 𝑌 ̅",
+        "𝑋   +   𝑌 ̅"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "difficulty": "Easy",
+      "year": "GATE 2025",
+      "marks": 1,
+      "negativeMarks": 0.33,
+      "createdAt": "2026-01-14T23:54:19.968Z",
+      "createdBy": 1
+    },
+    {
+      "id": 75,
+      "subject": "digital-logic",
+      "topic": "boolean-algebra",
+      "question": "The   following   two   signed   2’s   complement   numbers   (multiplicand   M   and  multiplier Q) are being multiplied using Booth’s algorithm:  M: 1100 1101 1110 1101 and Q: 1010 0100 1010 1010  The total number of addition and subtraction operations to be performed is  ____ _ ______ .   ( Answer   in integer)\n\nComputer Science and Information   Technology   (CS 2 )  Organising Institute:   IIT   Roorkee   Page   26   of   48",
+      "options": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "difficulty": "Easy",
+      "year": "GATE 2025",
+      "marks": 1,
+      "negativeMarks": 0.33,
+      "createdAt": "2026-01-14T23:54:19.976Z",
+      "createdBy": 1
+    },
+    {
+      "id": 76,
+      "subject": "engineering-mathematics",
+      "topic": "differential-equations",
+      "question": "int   x=126,y=105;  do   {  if(x>y)   x=x - y;  else   y=y - x;  }   while(x!=y);  printf(\"%d\",x);  The output of the   given C code segment   is ________.   (A nswer in integer)",
+      "options": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "difficulty": "Easy",
+      "year": "GATE 2025",
+      "marks": 1,
+      "negativeMarks": 0.33,
+      "createdAt": "2026-01-14T23:54:19.985Z",
+      "createdBy": 1
+    },
+    {
+      "id": 77,
+      "subject": "digital-logic",
+      "topic": "sequential-circuits",
+      "question": "In a 4 - bit ripple counter, if the period of the waveform at the last flip - flop is 64  microseconds, then the frequency of the ripple counter   in   kHz   is ________ .   ( Answer  in integer)",
+      "options": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "difficulty": "Easy",
+      "year": "GATE 2025",
+      "marks": 1,
+      "negativeMarks": 0.33,
+      "createdAt": "2026-01-14T23:54:19.995Z",
+      "createdBy": 1
+    },
+    {
+      "id": 78,
+      "subject": "digital-logic",
+      "topic": "boolean-algebra",
+      "question": "Suppose the values   10 ,   − 4 ,   15 ,   30 ,   20 ,   5 ,   60 ,   19   are inserted in that order into an  initially empty binary search tree. Let   𝑇   be the resulting binary search tree.  The number of edges in the path from the node containing   19   to the root node of   𝑇  is   ___________ .   ( Answer   in integer)\n\nComputer Science and Information   Technology   (CS 2 )  Organising Institute:   IIT   Roorkee   Page   27   of   48",
+      "options": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "difficulty": "Easy",
+      "year": "GATE 2025",
+      "marks": 1,
+      "negativeMarks": 0.33,
+      "createdAt": "2026-01-14T23:54:20.007Z",
+      "createdBy": 1
+    },
+    {
+      "id": 79,
+      "subject": "data-structures",
+      "topic": "arrays-linked-lists",
+      "question": "5   Carry TWO marks Each",
+      "options": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "difficulty": "Easy",
+      "year": "GATE 2025",
+      "marks": 1,
+      "negativeMarks": 0.33,
+      "createdAt": "2026-01-14T23:54:20.017Z",
+      "createdBy": 1
+    },
+    {
+      "id": 80,
+      "subject": "computer-networks",
+      "topic": "osi-tcp",
+      "question": "Suppose we are transmitting frames between two nodes using Stop - and - Wait  protocol. The frame size is 3000 bits. The transmission rate of the channel is 2000  bps (bits/secon",
+      "options": [
+        "88.23",
+        "93.75",
+        "85.44",
+        ""
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "difficulty": "Easy",
+      "year": "GATE 2025",
+      "marks": 1,
+      "negativeMarks": 0.33,
+      "createdAt": "2026-01-14T23:54:20.026Z",
+      "createdBy": 1
+    },
+    {
+      "id": 81,
+      "subject": "data-structures",
+      "topic": "graphs",
+      "question": "Let   𝐺   be an edge - weighted   un directed graph   with positive edge weights . Suppose a  positive   constant   𝛼   is added to   the weight of every edge .  Which ONE of the following statements   is TRUE   about the minimum spanning  trees (MSTs) and shortest paths (SPs) in   𝐺   before and   after the edge weight update ?",
+      "options": [
+        "Every MST remains an MST, and every SP remains an SP.",
+        "MSTs need not remain MSTs,   and   every SP remains an SP.",
+        "E very MST remains an MST , and   SPs need not remain SPs.",
+        ""
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "difficulty": "Easy",
+      "year": "GATE 2025",
+      "marks": 1,
+      "negativeMarks": 0.33,
+      "createdAt": "2026-01-14T23:54:20.035Z",
+      "createdBy": 1
+    },
+    {
+      "id": 82,
+      "subject": "data-structures",
+      "topic": "arrays-linked-lists",
+      "question": "A meld operation on two instances of a data structure   combines   them into one single  instance of the same data structure. Consider the following data structures:  P :   Unsorted doubly linked list with pointers to the head node and tail node  of the list.  Q :   Min - heap implemented using an array.  R :   Binary Search Tree.  Which ONE of the   following   options gives t he worst - case time complexities for  meld operation on instances of size   𝑛   of these data structures ?  (A)   P:   Θ ( 1 ) , Q:   Θ ( 𝑛 ) , R:   Θ ( 𝑛 )  (B)   P:   Θ ( 1 ) , Q:   Θ ( 𝑛   log   𝑛 ) , R:   Θ ( 𝑛 )  (C)   P:   Θ ( 𝑛 ) , Q:   Θ ( 𝑛   log   𝑛 ) , R:   Θ ( 𝑛 2 )  (D)   P:   Θ ( 1 ) , Q:   Θ ( 𝑛 ) , R:   Θ ( 𝑛   log   𝑛 )\n\nComputer Science and Information   Technology   (CS 2 )  Organising Institute:   IIT   Roorkee   Page   30   of   48",
+      "options": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "difficulty": "Easy",
+      "year": "GATE 2025",
+      "marks": 1,
+      "negativeMarks": 0.33,
+      "createdAt": "2026-01-14T23:54:20.044Z",
+      "createdBy": 1
+    },
+    {
+      "id": 83,
+      "subject": "computer-organization",
+      "topic": "memory-hierarchy",
+      "question": "For a direct - mapped cache, 4 bits are used for the tag field and 12 bits are used to  index into a cache block. The size of each cache block is one byte. Assume that  there is no other   information stored for each cache block.  Which ONE of the following is the CORRECT option for the sizes of the main  memory and the cache memory in this system (by te addressable), respectively?",
+      "options": [
+        "64   KB and 4 KB",
+        "128   KB and 16 KB",
+        "64 KB and   8   KB",
+        "128   KB and 6 KB"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "difficulty": "Easy",
+      "year": "GATE 2025",
+      "marks": 1,
+      "negativeMarks": 0.33,
+      "createdAt": "2026-01-14T23:54:20.053Z",
+      "createdBy": 1
+    },
+    {
+      "id": 84,
+      "subject": "compiler-design",
+      "topic": "parsing",
+      "question": "Given a Context - Free Grammar   𝐺   as follows:  𝑆  →   𝐴𝑎   |   𝑏𝐴𝑐   |   𝑑𝑐   |   𝑏𝑑𝑎  𝐴  →   𝑑  Which ONE of the following statements is TRUE?  (A)   𝐺   is   neither LALR(1)   no r   SLR(1)  (B)   𝐺   is   CLR (1), not LALR(1)  (C)   𝐺   is   LALR (1), not   SL R(1)  (D)   𝐺   is   LALR (1),   also   S LR(1)\n\nComputer Science and Information   Technology   (CS 2 )  Organising Institute:   IIT   Roorkee   Page   31   of   48",
+      "options": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "difficulty": "Easy",
+      "year": "GATE 2025",
+      "marks": 1,
+      "negativeMarks": 0.33,
+      "createdAt": "2026-01-14T23:54:20.062Z",
+      "createdBy": 1
+    },
+    {
+      "id": 85,
+      "subject": "digital-logic",
+      "topic": "boolean-algebra",
+      "question": "An array   𝐴   of length   𝑛   with distinct elements is said to be bitonic if there is an index  1   ≤   𝑖   ≤   𝑛   such that   𝐴 [ 1 .   .   𝑖 ] is sorted in the non - decreasing order and   𝐴 [ 𝑖   +   1   .   .   𝑛 ]  is sorted in the non - increasing order.  Which ONE of the following represents   the best possible asymptotic bound for the  worst - case number of comparisons by an algorithm that sear ches for an element in  a bitonic   array   𝐴 ?  (A)   Θ ( 𝑛 )  (B)   Θ ( 1 )  (C)   Θ ( log 2   𝑛 )  (D)   Θ ( log   𝑛 )",
+      "options": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "difficulty": "Easy",
+      "year": "GATE 2025",
+      "marks": 1,
+      "negativeMarks": 0.33,
+      "createdAt": "2026-01-14T23:54:20.071Z",
+      "createdBy": 1
+    },
+    {
+      "id": 86,
+      "subject": "digital-logic",
+      "topic": "boolean-algebra",
+      "question": "Let   ℱ   be   the   set   of   all   functions   from   { 1 ,   …   ,   𝑛 }   to   { 0 , 1 } .   Define  the binary relation   ≼   on   ℱ   as follows:  ∀ 𝑓 ,   𝑔   ∈   ℱ ,   𝑓   ≼   𝑔   if and only if   ∀ 𝑥   ∈   { 1 ,   …   ,   𝑛 } ,   𝑓 ( 𝑥 )   ≤   𝑔 ( 𝑥 ) ,   where   0   ≤   1 .  Which of the following statement ( s )   is /are   TRUE?  (A)   ≼   is a symmetric relation  (B)   ( ℱ ,   ≼   )   is a partial order  (C)   ( ℱ ,   ≼   )   is a lattice  (D)   ≼   is an equivalence relation\n\nComputer Science and Information   Technology   (CS 2 )  Organising Institute:   IIT   Roorkee   Page   32   of   48",
+      "options": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "difficulty": "Easy",
+      "year": "GATE 2025",
+      "marks": 1,
+      "negativeMarks": 0.33,
+      "createdAt": "2026-01-14T23:54:20.084Z",
+      "createdBy": 1
+    },
+    {
+      "id": 87,
+      "subject": "digital-logic",
+      "topic": "boolean-algebra",
+      "question": "Given the following Karnaugh Map for a Boolean function   𝐹 ( 𝑤 ,   𝑥 ,   𝑦 ,   𝑧 ) :  Which   one or more   of the following Boolean expression ( s )   represent (s)   𝐹 ?",
+      "options": [
+        "𝑤 ̅   𝑥 ̅   𝑦 ̅   𝑧 ̅   +   𝑤 𝑥 ̅   𝑦 ̅   𝑧 ̅   +   𝑤 ̅   𝑥 ̅   𝑦 𝑧 ̅   +   𝑤 𝑥 ̅   𝑦 𝑧 ̅   +   𝑥𝑧",
+        "𝑤 ̅   𝑥 ̅   𝑦 ̅   𝑧 ̅   +   𝑤 ̅   𝑥 ̅   𝑦 𝑧 ̅   +   𝑤 𝑥 ̅   𝑦𝑧   +   𝑥𝑧",
+        "𝑤 ̅   𝑥 ̅   𝑦 ̅   𝑧 ̅   +   𝑤 𝑥 ̅   𝑦 ̅   𝑧 ̅   +   𝑤 𝑥 ̅   𝑦 ̅   𝑧   +   𝑥𝑧",
+        ""
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "difficulty": "Easy",
+      "year": "GATE 2025",
+      "marks": 1,
+      "negativeMarks": 0.33,
+      "createdAt": "2026-01-14T23:54:20.093Z",
+      "createdBy": 1
+    },
+    {
+      "id": 88,
+      "subject": "computer-networks",
+      "topic": "osi-tcp",
+      "question": "Consider a system of linear equations   𝑃𝑋   =   𝑄   where   𝑃   ∈   ℝ 3 × 3   and Q   ∈   ℝ 3 × 1 .  Suppose   𝑃   has an   LU   decomposition,   𝑃   =   𝐿𝑈 , where  𝐿   =   [  1   0   0  𝑙 21   1   0  𝑙 31   𝑙 32   1  ]   and   𝑈   =   [  𝑢 11   𝑢 12   𝑢 13  0   𝑢 22   𝑢 23  0   0   𝑢 33  ] .  Which of the   following statement ( s )   is/are TRUE?",
+      "options": [
+        "The system   𝑃𝑋   =   𝑄   can be solved by first solving   𝐿𝑌   =   𝑄   and then   𝑈𝑋   =   𝑌 .",
+        "If   𝑃   is invertible, then both   𝐿   and   𝑈   are invertible.",
+        "If   𝑃   is singular, then at least one of the diagonal elements of   𝑈   is zero.",
+        ""
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "difficulty": "Easy",
+      "year": "GATE 2025",
+      "marks": 1,
+      "negativeMarks": 0.33,
+      "createdAt": "2026-01-14T23:54:20.103Z",
+      "createdBy": 1
+    },
+    {
+      "id": 89,
+      "subject": "digital-logic",
+      "topic": "boolean-algebra",
+      "question": "Consider a stack data structure into which we can   PUSH   and   POP   records. Assume  that each record pushed in the stack has a positive integer key and that all keys are  distinct.  We wish to augment the stack data structure with an   𝑂 ( 1 )   time MIN operation that  returns a pointer to the record with smallest key present in the stack  1)   without deleting the corresponding record, and  2)   without increasing the complexities of the standard stack operations.  Which   one or more   of the follo wing approach ( es )   can achieve it?",
+      "options": [
+        "Keep with every record in the stack ,   a pointer to the record with the smallest key  below it.",
+        "Keep a pointer to the   record with the smallest key in the stack.",
+        "Keep an auxiliary array in which the key values of the records in the stack are  maintained in sorted order.",
+        ""
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "difficulty": "Easy",
+      "year": "GATE 2025",
+      "marks": 1,
+      "negativeMarks": 0.33,
+      "createdAt": "2026-01-14T23:54:20.112Z",
+      "createdBy": 1
+    },
+    {
+      "id": 90,
+      "subject": "dbms",
+      "topic": "relational-model",
+      "question": "Consider the following relational schema along with all the functional dependencies  that hold on them .  R1(A, B, C, D, E):   {   𝐷   →   𝐸 ,   𝐸𝐴   →   𝐵 ,   𝐸𝐵   →   𝐶 }  R2(A, B, C,",
+      "options": [
+        "R1   is in 3NF",
+        "R2   is in 3NF",
+        "R1   is NOT in 3NF",
+        ""
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "difficulty": "Easy",
+      "year": "GATE 2025",
+      "marks": 1,
+      "negativeMarks": 0.33,
+      "createdAt": "2026-01-14T23:54:20.121Z",
+      "createdBy": 1
+    },
+    {
+      "id": 91,
+      "subject": "operating-systems",
+      "topic": "memory-management",
+      "question": "Consider a demand paging system with three frames, and the following page  reference string: 1 2 3 4 5 4 1 6 4 5 1 3 2. The contents   of the   frames are as follows  initially and after   each   reference   (from left to right) :  initially   after  -   1*   2*   3*   4*   5*   4   1   6*   4   5   1*   3*   2*  -   1   1   1   1   1   1   1   6   6   6   6   6   2  -   -   2   2   4   4   4   4   4   4   4   1   1   1  -   -   -   3   3   5   5   5   5   5   5   5   3   3  The * - mark ed references cause page replacements.  Which   one or more   of the following could be the page replacement policy /policies  in use?",
+      "options": [
+        "Least Recently Used   page replacement policy",
+        "Least Frequently Used   page   replacement policy",
+        "Most Frequently Used   page replacement policy",
+        ""
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "difficulty": "Easy",
+      "year": "GATE 2025",
+      "marks": 1,
+      "negativeMarks": 0.33,
+      "createdAt": "2026-01-14T23:54:20.131Z",
+      "createdBy": 1
+    },
+    {
+      "id": 92,
+      "subject": "operating-systems",
+      "topic": "process-management",
+      "question": "𝑃   =   { 𝑃 1 ,   𝑃 2 ,   𝑃 3 ,   𝑃 4 }   consists of all active processes in an operating system.  𝑅   =   { 𝑅 1 ,   𝑅 2 ,   𝑅 3 ,   𝑅 4 }   consists of single instance s of distinct types of   resources in the  system.  The resource allocation graph has the following assignment and claim edges.  Assignment edges:   𝑅 1   →   𝑃 1 ,   𝑅 2   →   𝑃 2 ,   𝑅 3   →   𝑃 3 ,   𝑅 4   →   𝑃 4   (the assignment edge  𝑅 1   →   𝑃 1   means resource   𝑅 1   is assigned to process   𝑃 1   , an d so on for others)  Claim edges:   𝑃 1   →   𝑅 2 ,   𝑃 2   →   𝑅 3 ,   𝑃 3   →   𝑅 1 ,   𝑃 2   →   𝑅 4 ,   𝑃 4   →   𝑅 2   (the claim edge  𝑃 1   →   𝑅 2   means   process   𝑃 1   is waiting for resource   𝑅 2   ,   and so on for others)  Which of the   following statement ( s )   is/ are   CORRECT ?",
+      "options": [
+        "A borting   𝑃 1   makes the system deadlock free.",
+        "A borting   𝑃 3   makes the system deadlock free.",
+        "A borting   𝑃 2   makes the system deadlock free.",
+        ""
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "difficulty": "Easy",
+      "year": "GATE 2025",
+      "marks": 1,
+      "negativeMarks": 0.33,
+      "createdAt": "2026-01-14T23:54:20.141Z",
+      "createdBy": 1
+    },
+    {
+      "id": 93,
+      "subject": "digital-logic",
+      "topic": "sequential-circuits",
+      "question": "Three floating point numbers   𝑋 ,   𝑌 ,   and   𝑍   are stored in three registers R X , R Y , and  R Z ,   respectively   in   IEEE   754   single   precision   format   as   given   below   in  hexadecimal:  R X   = 0xC1100000, R Y   = 0x40C00000, and R Z   = 0x41400000  Which of the following   option ( s )   is/ are   CORRECT ?",
+      "options": [
+        "2 𝑌   –   𝑍   =   0",
+        "4 𝑋   +   3 𝑍   =   0",
+        "𝑋   +   𝑌   +   𝑍   =   0",
+        ""
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "difficulty": "Easy",
+      "year": "GATE 2025",
+      "marks": 1,
+      "negativeMarks": 0.33,
+      "createdAt": "2026-01-14T23:54:20.150Z",
+      "createdBy": 1
+    },
+    {
+      "id": 94,
+      "subject": "digital-logic",
+      "topic": "boolean-algebra",
+      "question": "Which   of the following Boolean algebra ic   equation ( s )   is/are   CORRECT ?",
+      "options": [
+        "𝐴 ̅   𝐵   𝐶   +   𝐴   𝐵 ̅   𝐶 ̅   +   𝐴 ̅   𝐵 ̅   𝐶 ̅   +   𝐴   𝐵 ̅   𝐶   +   𝐴   𝐵   𝐶   =   𝐵   𝐶   +   𝐵 ̅   𝐶 ̅   +   𝐴 ̅   𝐵 ̅",
+        "𝐴   𝐵   +   𝐴 ̅   𝐶   +   𝐵   𝐶   =   𝐴   𝐵   +   𝐴 ̅   𝐶",
+        "",
+        ""
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "difficulty": "Easy",
+      "year": "GATE 2025",
+      "marks": 1,
+      "negativeMarks": 0.33,
+      "createdAt": "2026-01-14T23:54:20.162Z",
+      "createdBy": 1
+    },
+    {
+      "id": 95,
+      "subject": "digital-logic",
+      "topic": "boolean-algebra",
+      "question": "Consider two grammars   𝐺 1   and   𝐺 2   with the production rules given below:  𝐺 1 :   𝑆   →   𝑖𝑓   𝐸   𝑡 ℎ 𝑒𝑛   𝑆   |   𝑖𝑓   𝐸   𝑡 ℎ 𝑒𝑛   𝑆   𝑒𝑙𝑠𝑒   𝑆   |   𝑎  𝐸   →   𝑏  𝐺 2 :   𝑆   →   𝑖𝑓   𝐸   𝑡 ℎ 𝑒𝑛   𝑆   |   𝑀  𝑀   →   𝑖𝑓   𝐸   𝑡 ℎ 𝑒𝑛   𝑀   𝑒𝑙𝑠𝑒   𝑆   |   𝑐  𝐸   →   𝑏  where   𝑖𝑓 ,   𝑡 ℎ 𝑒𝑛 ,   𝑒𝑙𝑠𝑒 ,   𝑎 ,   𝑏 ,   𝑐   are the terminals.  Which of the following   option ( s )   is/ are   CORRECT ?  (A)   𝐺 1   is not   𝐿𝐿 ( 1 )   and   𝐺 2   is   𝐿𝐿 ( 1 ) .  (B)   𝐺 1   is   𝐿𝐿 ( 1 )   and   𝐺 2   is not   𝐿𝐿 ( 1 ) .  (C)   𝐺 1   and   𝐺 2   are not   𝐿𝐿 ( 1 ) .  (D)   𝐺 1   and   𝐺 2   are ambiguous.\n\nComputer Science and Information   Technology   (CS 2 )  Organising Institute:   IIT   Roorkee   Page   40   of   48",
+      "options": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "difficulty": "Easy",
+      "year": "GATE 2025",
+      "marks": 1,
+      "negativeMarks": 0.33,
+      "createdAt": "2026-01-14T23:54:20.171Z",
+      "createdBy": 1
+    },
+    {
+      "id": 96,
+      "subject": "toc",
+      "topic": "regular-languages",
+      "question": "Let   Σ   =   { 𝑎 ,   𝑏 ,   𝑐 } .   For   𝑥   ∈   Σ ∗ ,   and   𝛼   ∈   Σ ,   let   # 𝛼 ( 𝑥 )   denote the number of  occurrences of   𝛼   in   𝑥 .  Which   one or more   of the following   option(s) define(s)   regular   language (s) ?",
+      "options": [
+        "{ 𝑎 𝑚 𝑏 𝑛   |   𝑚 ,   𝑛   ≥   0 }",
+        "{ 𝑎 ,   𝑏 } ∗   ∩   { 𝑎 𝑚 𝑏 𝑛 𝑐 𝑚 − 𝑛   |   𝑚   ≥   𝑛   ≥   0 }",
+        "",
+        ""
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "difficulty": "Easy",
+      "year": "GATE 2025",
+      "marks": 1,
+      "negativeMarks": 0.33,
+      "createdAt": "2026-01-14T23:54:20.180Z",
+      "createdBy": 1
+    },
+    {
+      "id": 97,
+      "subject": "dbms",
+      "topic": "transactions",
+      "question": "Consider the database transactions T1 and T2,   and data items X and Y. Which of  the schedule(s ) is/are conflict serializable?  (A)   R1(X), W2(X), W1(Y), W2(Y), R1(X), W1(X), COMMIT(T2),   COMMIT(T1)  (B)   W2(X),   R1(X),   W2(Y),   W1(Y),   R1(X),   COMMIT(T2),   W1(X),   COMMIT(T1)  (C)   R1(X), W1(Y), W2(X), W2(Y), R1(X), W1(X), COMMIT(T1), COMMIT(T2)  (D)   W2(X), R1(X), W1(Y), W2(Y), R1(X), COMMIT(T2), W1(X), COMMIT(T1)  Transaction T1  R1(X)  W1(Y)  R1(X)  W1(X)  COMMIT(T1)  Transaction T2  W2(X)  W2(Y)  COMMIT(T2)\n\nComputer Science and Information   Technology   (CS 2 )  Organising Institute:   IIT   Roorkee   Page   42   of   48",
+      "options": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "difficulty": "Easy",
+      "year": "GATE 2025",
+      "marks": 1,
+      "negativeMarks": 0.33,
+      "createdAt": "2026-01-14T23:54:20.190Z",
+      "createdBy": 1
+    },
+    {
+      "id": 98,
+      "subject": "dbms",
+      "topic": "sql",
+      "question": "Consider the   following relational schema:  Students   ( rollno:   integer , name:   string, age: integer, cgpa:   real)  Courses   ( courseno:   integer , cname:   string, credits: integer)  Enrolled   ( rollno:   integer ,   courseno:   integer , grade:   string)  Which of the following   options   is/are correct   SQL   query/ queries   to retrieve   the  names of the students enrolled in   course number (i.e.,   course no)   1470 ?  (A)   SELECT   S.name  FROM   Students   S  WHERE   EXISTS   (SELECT   *   FROM   Enrolled   E  WHERE   E.courseno   =   1470  AND   E.rollno   =   S.rollno) ;  (B)   SELECT   S.name  FROM   Students   S  WHERE   SIZEOF   (SELECT   *   FROM   Enrolled   E  WHERE   E.courseno   =   1470  AND   E.rollno   =   S.rollno)   >   0 ;  (C)   SELECT   S.name  FROM   Students   S  WHERE   0   <   (SELECT   COUNT(*)  FROM   Enrolled   E  WHERE   E.courseno   =   1470  AND   E.rollno   =   S.rollno) ;  (D)   SELECT   S.name  FROM   Students   S   NATURAL   JOIN   Enrolled   E  WHERE   E.courseno   =   1470 ;\n\nComputer Science and Information   Technology   (CS 2 )  Organising Institute:   IIT   Roorkee   Page   43   of   48",
+      "options": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "difficulty": "Easy",
+      "year": "GATE 2025",
+      "marks": 1,
+      "negativeMarks": 0.33,
+      "createdAt": "2026-01-14T23:54:20.198Z",
+      "createdBy": 1
+    },
+    {
+      "id": 99,
+      "subject": "computer-organization",
+      "topic": "memory-hierarchy",
+      "question": "Given a computing system with two levels of cache (L1 and L2) and a main  memory. The first level (L1) cache access time is 1   nanosecond ( ns )   and the “hit  rate” for L1 cache is 90% while the processor is accessing the data from L1 cache.  Whereas, for the second level (L2) cache, the “hit rate” is 80% and the “miss  penalty” for transferring data from L2 cache to L1 cache is 10   ns . The “miss  penalty” for the data to be transferred from main memory to L2 cache is 100   ns .  Then   the   average   memory   access   time   in   this   system   in   nanoseconds   is  ___________   .   ( rounded   off   to one decimal place)",
+      "options": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "difficulty": "Easy",
+      "year": "GATE 2025",
+      "marks": 1,
+      "negativeMarks": 0.33,
+      "createdAt": "2026-01-14T23:54:20.208Z",
+      "createdBy": 1
+    },
+    {
+      "id": 100,
+      "subject": "computer-organization",
+      "topic": "pipelining",
+      "question": "A 5 - stage instruction pipeline has stage   delays of 180, 250, 150, 170, and 250,  respectively, in nanoseconds. The delay of an inter - stage latch is 10 nanoseconds.  Assume that there are no pipeline stalls due to branches and other hazards. The time  taken to process 1000 instruct ions   in microseconds   is __________   .   (rounded off to  two decimal places)",
+      "options": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "difficulty": "Easy",
+      "year": "GATE 2025",
+      "marks": 1,
+      "negativeMarks": 0.33,
+      "createdAt": "2026-01-14T23:54:20.218Z",
+      "createdBy": 1
+    },
+    {
+      "id": 101,
+      "subject": "data-structures",
+      "topic": "trees",
+      "question": "In a B + -   tree where each node can hold at most four key values, a root to leaf path  consists of   the following   nodes :  A = (49, 77, 83,   - ), B = (7, 19, 33, 44) ,   C = (20*, 22*, 25*, 26*)  The * - mark ed keys signify that these are data entries in a leaf.  Assume that a pointer between keys   𝑘 1   and   𝑘 2   points to a subtree containing keys  in [ 𝑘 1 ,   𝑘 2 ) , and that when a leaf is created, the smallest key in it is   copied up into  its parent.  A record with key value 23 is inserted into the B + -   tree.  The smallest key value in the parent of the leaf that contains 25*   is __________.  ( Answer   in integer)\n\nComputer Science and Information   Technology   (CS 2 )  Organising Institute:   IIT   Roorkee   Page   44   of   48",
+      "options": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "difficulty": "Easy",
+      "year": "GATE 2025",
+      "marks": 1,
+      "negativeMarks": 0.33,
+      "createdAt": "2026-01-14T23:54:20.228Z",
+      "createdBy": 1
+    },
+    {
+      "id": 102,
+      "subject": "operating-systems",
+      "topic": "memory-management",
+      "question": "A computer system supports a logical address space of 2 32   bytes. It uses two - level  hierarchical paging with a page size of 4096 bytes. A logical address is divided into  a   𝑏 - bit index to the outer page table, an offset within the page of the inner page  table, and an offset within the desired page. Each entry of the inner page table uses  eight bytes. All the pages in the system have the same size.  The value of   𝑏   is ___________   .   (Answer in int eger)",
+      "options": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "difficulty": "Easy",
+      "year": "GATE 2025",
+      "marks": 1,
+      "negativeMarks": 0.33,
+      "createdAt": "2026-01-14T23:54:20.240Z",
+      "createdBy": 1
+    },
+    {
+      "id": 103,
+      "subject": "data-structures",
+      "topic": "graphs",
+      "question": "Consider the following algorithm   someAlgo   that takes an undirected graph   𝐺   as  input.  someAlgo( 𝐺 )  1.   Let   𝑣   be any vertex in   𝐺 . Run BFS on   𝐺   starting at  𝑣 . Let   𝑢   be a vertex in   𝐺   at maximum distance from  𝑣   as   given   by   the   BFS.  2.   Run   BFS   on   𝐺   again with   𝑢   as   the   starting   vertex.  Let   𝑧   be   the   vertex   at   maximum   distance   from   𝑢   as  given   by   the   BFS.  3.   Output   the   distance   between   𝑢   and   𝑧   in   𝐺 .  The   output   of   someAlgo( 𝑇 )   for   the   tree   shown   in   the   given   figure   is  ___________ .   ( Answer   in integer)\n\nComputer Science and Information   Technology   (CS 2 )  Organising Institute:   IIT   Roorkee   Page   45   of   48",
+      "options": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "difficulty": "Easy",
+      "year": "GATE 2025",
+      "marks": 1,
+      "negativeMarks": 0.33,
+      "createdAt": "2026-01-14T23:54:20.249Z",
+      "createdBy": 1
+    },
+    {
+      "id": 104,
+      "subject": "toc",
+      "topic": "finite-automata",
+      "question": "Let   Σ   =   { 1 , 2 , 3 , 4 } .   For   𝑥   ∈   Σ ∗ ,   l et   𝑝𝑟𝑜𝑑 ( 𝑥 )   be   the   product   of   symbols   in  𝑥   modulo   7 . We take   𝑝𝑟𝑜𝑑 ( 𝜖 )   =   1 , where   𝜖   is the null string.  For example,   𝑝𝑟𝑜𝑑 ( 124 )   =   ( 1   ×   2   ×   4 )   mod   7   =   1 .  Define   𝐿   =   { 𝑥   ∈   Σ ∗   |   𝑝𝑟𝑜𝑑 ( 𝑥 )   =   2 } .  The number of states in a minimum state DFA for   𝐿   is   ___________ .   (Answer in  integer)",
+      "options": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "difficulty": "Easy",
+      "year": "GATE 2025",
+      "marks": 1,
+      "negativeMarks": 0.33,
+      "createdAt": "2026-01-14T23:54:20.259Z",
+      "createdBy": 1
+    },
+    {
+      "id": 105,
+      "subject": "computer-organization",
+      "topic": "cpu-architecture",
+      "question": "An application executes   6 . 4   ×   10 8   number of instructions in 6.3 seconds. There are  four types of instructions, the details of which are given in the table. The duration  of a clock cycle in nanoseconds is _________ .   ( rounded off to one decimal place)  Instruction type   Clock cycles required per  instruction (CPI)  Number of instructions  executed  Branch   2   2 . 25   ×   10 8  Load   5   1 . 20   ×   10 8  Store   4   1 . 65   ×   10 8  Arithmetic   3   1 . 30   ×   10 8\n\nComputer Science and Information   Technology   (CS 2 )  Organising Institute:   IIT   Roorkee   Page   46   of   48",
+      "options": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "difficulty": "Easy",
+      "year": "GATE 2025",
+      "marks": 1,
+      "negativeMarks": 0.33,
+      "createdAt": "2026-01-14T23:54:20.270Z",
+      "createdBy": 1
+    },
+    {
+      "id": 106,
+      "subject": "digital-logic",
+      "topic": "boolean-algebra",
+      "question": "Consider the following C program:  #include   <stdio.h>  int   main(){  int   a;  int   arr[5]   =   {30,50,10};  int   * ptr;  ptr   =   &arr[0]   +   1;  a   =   *ptr;  (*ptr)++;  ptr++;  printf( \" %d \" ,   a   +   (*ptr)   +   arr[1]);  return   0;  }  The output of the above program is ___________ .   ( Answer   in integer)\n\nComputer Science and Information   Technology   (CS 2 )  Organising Institute:   IIT   Roorkee   Page   47   of   48",
+      "options": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "difficulty": "Easy",
+      "year": "GATE 2025",
+      "marks": 1,
+      "negativeMarks": 0.33,
+      "createdAt": "2026-01-14T23:54:20.279Z",
+      "createdBy": 1
+    },
+    {
+      "id": 107,
+      "subject": "compiler-design",
+      "topic": "parsing",
+      "question": "Consider the following C program:  #include   <stdio.h>  int   g(int   n)   {  return   (n+10);  }  int   f(int   n)   {  return   g(n*2);  }  int   main()   {  int   sum,   n;  sum=0;  for   (n=1;   n<3;   n++)  sum   +=   g(f(n));  printf   (\"%d\",   sum);  return   0;  }  The output of the given C program i s ________ . (A nswer in integer)",
+      "options": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "difficulty": "Easy",
+      "year": "GATE 2025",
+      "marks": 1,
+      "negativeMarks": 0.33,
+      "createdAt": "2026-01-14T23:54:20.289Z",
+      "createdBy": 1
+    },
+    {
+      "id": 108,
+      "subject": "engineering-mathematics",
+      "topic": "probability",
+      "question": "A quadratic polynomial   ( 𝑥   −   𝛼 ) ( 𝑥   −   𝛽 )   over complex numbers   is said to be square  invariant if   ( 𝑥   −   𝛼 ) ( 𝑥   −   𝛽 )   =   ( 𝑥   −   𝛼 2 ) ( 𝑥   −   𝛽 2 ) . Suppose from the set of all  square invariant quadratic polynomials we choose one at random.  The probability that the roots of the chosen polynomial   are equal is __________.  ( rounded off to   one decimal place)\n\nComputer Science and Information   Technology   (CS 2 )  Organising Institute:   IIT   Roorkee   Page   48   of   48",
+      "options": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "difficulty": "Easy",
+      "year": "GATE 2025",
+      "marks": 1,
+      "negativeMarks": 0.33,
+      "createdAt": "2026-01-14T23:54:20.299Z",
+      "createdBy": 1
+    },
+    {
+      "id": 109,
+      "subject": "dbms",
+      "topic": "sql",
+      "question": "The unit interval   ( 0 , 1 )   is divided at a point chosen   uniformly distributed over   ( 0 , 1 )  in   ℝ   into two disjoint subintervals.  The expected length of the subinterval that contains   0 . 4   is   ___________ . (rounded  off   to two decimal places)",
+      "options": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "difficulty": "Easy",
+      "year": "GATE 2025",
+      "marks": 1,
+      "negativeMarks": 0.33,
+      "createdAt": "2026-01-14T23:54:20.309Z",
+      "createdBy": 1
+    },
+    {
+      "id": 110,
+      "subject": "data-structures",
+      "topic": "arrays-linked-lists",
+      "question": "Carry ONE mark Each",
+      "options": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "difficulty": "Easy",
+      "year": null,
+      "marks": 1,
+      "negativeMarks": 0.33,
+      "createdAt": "2026-01-15T21:48:03.917Z",
+      "createdBy": 1
+    },
+    {
+      "id": 111,
+      "subject": "computer-organization",
+      "topic": "io-systems",
+      "question": "Despite his initial hesitation, Rehman’s _________ to contribute to the success of  the project never wavere",
+      "options": [
+        "ambivalence",
+        "satisfaction",
+        "resolve",
+        ""
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "difficulty": "Easy",
+      "year": null,
+      "marks": 1,
+      "negativeMarks": 0.33,
+      "createdAt": "2026-01-15T21:48:03.935Z",
+      "createdBy": 1
+    },
+    {
+      "id": 112,
+      "subject": "computer-organization",
+      "topic": "io-systems",
+      "question": "Bird : Nest :: Bee : _______  Select the correct option to complete the analogy.",
+      "options": [
+        "Kennel",
+        "Hammock",
+        "Hive",
+        ""
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "difficulty": "Easy",
+      "year": null,
+      "marks": 1,
+      "negativeMarks": 0.33,
+      "createdAt": "2026-01-15T21:48:03.953Z",
+      "createdBy": 1
+    },
+    {
+      "id": 113,
+      "subject": "compiler-design",
+      "topic": "parsing",
+      "question": "If   𝑃 𝑒 𝑥   =   𝑄 𝑒 − 𝑥   for all real values of   𝑥 , which one of the following statements is  true?",
+      "options": [
+        "𝑃   =   𝑄   =   0",
+        "𝑃   =   𝑄   =   1",
+        "𝑃   =   1 ;   𝑄   =   − 1",
+        ""
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "difficulty": "Easy",
+      "year": null,
+      "marks": 1,
+      "negativeMarks": 0.33,
+      "createdAt": "2026-01-15T21:48:03.964Z",
+      "createdBy": 1
+    },
+    {
+      "id": 114,
+      "subject": "digital-logic",
+      "topic": "boolean-algebra",
+      "question": "The   paper as   shown in the figure is folded to make a cube   where each square  corresponds to a particular face of the cube . Which one of the following options  correctly represents the cube?  Note: The figures shown are representative.",
+      "options": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "difficulty": "Easy",
+      "year": null,
+      "marks": 1,
+      "negativeMarks": 0.33,
+      "createdAt": "2026-01-15T21:48:03.974Z",
+      "createdBy": 1
+    },
+    {
+      "id": 115,
+      "subject": "digital-logic",
+      "topic": "boolean-algebra",
+      "question": "Let   𝑝 1   and   𝑝 2   denote two arbitrary prime numbers. Which one of the following  statements is correct for all values of   𝑝 1   and   𝑝 2 ?",
+      "options": [
+        "𝑝 1   +   𝑝 2   is not a prime number.",
+        "𝑝 1 𝑝 2   is not a prime number.",
+        "𝑝 1   +   𝑝 2   +   1   is a prime number.",
+        ""
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "difficulty": "Easy",
+      "year": null,
+      "marks": 1,
+      "negativeMarks": 0.33,
+      "createdAt": "2026-01-15T21:48:03.986Z",
+      "createdBy": 1
+    },
+    {
+      "id": 116,
+      "subject": "data-structures",
+      "topic": "arrays-linked-lists",
+      "question": "Carry TWO marks Each",
+      "options": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "difficulty": "Easy",
+      "year": null,
+      "marks": 1,
+      "negativeMarks": 0.33,
+      "createdAt": "2026-01-15T21:48:03.999Z",
+      "createdBy": 1
+    },
+    {
+      "id": 117,
+      "subject": "digital-logic",
+      "topic": "boolean-algebra",
+      "question": "Based only on the conversation below, identify the logically correct inference:  “Even if I had known that you were in the hospital, I would not have gone there to  see you”, Ramya told   Josephine.",
+      "options": [
+        "Ramya knew that Josephine was in the hospital.",
+        "Ramya did not know that Josephine was in the hospital.",
+        "Ramya and Josephine were once close friends; but now, they are not.",
+        ""
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "difficulty": "Easy",
+      "year": null,
+      "marks": 1,
+      "negativeMarks": 0.33,
+      "createdAt": "2026-01-15T21:48:04.011Z",
+      "createdBy": 1
+    },
+    {
+      "id": 118,
+      "subject": "digital-logic",
+      "topic": "boolean-algebra",
+      "question": "If IMAGE and FIELD are coded as FHBNJ and EMFJG respectively then, which  one among the given options is the most appropriate code for BEACH ?",
+      "options": [
+        "CEADP",
+        "IDBFC",
+        "JGIBC",
+        ""
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "difficulty": "Easy",
+      "year": null,
+      "marks": 1,
+      "negativeMarks": 0.33,
+      "createdAt": "2026-01-15T21:48:04.021Z",
+      "createdBy": 1
+    },
+    {
+      "id": 119,
+      "subject": "digital-logic",
+      "topic": "boolean-algebra",
+      "question": "Which one of the following options is correct for the given data in the table?  Iteration ( i )   0   1   2   3  Input ( I )   20   − 4   10   15  Output ( X )   20   16   26   41  Output ( Y )   20   − 80   − 800   − 12000  (A)   𝑋 ( 𝑖 )   =   𝑋 ( 𝑖   −   1 )   +   𝐼 ( 𝑖 ) ;   𝑌 ( 𝑖 )   =   𝑌 ( 𝑖   −   1 ) 𝐼 ( 𝑖 ) ;   𝑖   >   0  (B)   𝑋 ( 𝑖 )   =   𝑋 ( 𝑖   −   1 ) 𝐼 ( 𝑖 ) ;   𝑌 ( 𝑖 )   =   𝑌 ( 𝑖   −   1 )   +   𝐼 ( 𝑖 ) ;   𝑖   >   0  (C)   𝑋 ( 𝑖 )   =   𝑋 ( 𝑖   −   1 ) 𝐼 ( 𝑖 ) ;   𝑌 ( 𝑖 )   =   𝑌 ( 𝑖   −   1 ) 𝐼 ( 𝑖 ) ;   𝑖   >   0  (D)   𝑋 ( 𝑖 )   =   𝑋 ( 𝑖   −   1 )   +   𝐼 ( 𝑖 ) ;   𝑌 ( 𝑖 )   =   𝑌 ( 𝑖   −   1 ) 𝐼 ( 𝑖   −   1 ) ;   𝑖   >   0\n\nComputer Science and Information   Technology   (CS 2 )  Organising Institute:   IIT   Roorkee   Page   9   of   48",
+      "options": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "difficulty": "Easy",
+      "year": null,
+      "marks": 1,
+      "negativeMarks": 0.33,
+      "createdAt": "2026-01-15T21:48:04.028Z",
+      "createdBy": 1
+    },
+    {
+      "id": 120,
+      "subject": "digital-logic",
+      "topic": "boolean-algebra",
+      "question": "In the given figure, PQRS is a   square of side 2 cm and PLMN is a rectangle. The  corner L of the rectangle is on the side QR. Side MN of the rectangle passes through  the corner S of the square.  What is the area (in cm 2 )   of the rectangle PLMN?  Note: The figure shown is representative.",
+      "options": [
+        "2 √ 2",
+        "2",
+        "8",
+        ""
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "difficulty": "Easy",
+      "year": null,
+      "marks": 1,
+      "negativeMarks": 0.33,
+      "createdAt": "2026-01-15T21:48:04.034Z",
+      "createdBy": 1
+    },
+    {
+      "id": 121,
+      "subject": "digital-logic",
+      "topic": "boolean-algebra",
+      "question": "The diagram below shows a river system consisting of 7 segments, marked P, Q, R,  S, T, U, and V. It splits the land into 5 zones, marked Z1, Z2, Z3, Z4, and Z5. We  need to   connect these zones using the least number of bridges. Out of the following  options, which one is correct?  Note: The figure shown is representative.",
+      "options": [
+        "Bridges on P, Q, and T",
+        "Bridges on P,   Q, S, and T",
+        "Bridges on Q, R, T, and V",
+        ""
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "difficulty": "Easy",
+      "year": null,
+      "marks": 1,
+      "negativeMarks": 0.33,
+      "createdAt": "2026-01-15T21:48:04.043Z",
+      "createdBy": 1
+    },
+    {
+      "id": 122,
+      "subject": "data-structures",
+      "topic": "arrays-linked-lists",
+      "question": "5   Carry ONE mark Each",
+      "options": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "difficulty": "Easy",
+      "year": null,
+      "marks": 1,
+      "negativeMarks": 0.33,
+      "createdAt": "2026-01-15T21:48:04.053Z",
+      "createdBy": 1
+    },
+    {
+      "id": 123,
+      "subject": "compiler-design",
+      "topic": "parsing",
+      "question": "1   If   𝐴   =   ( 1   2  2   − 1 ) , then which   ONE   of the following is   𝐴 8   ?  (A)   ( 25   0  0   25 )  (B)   ( 125   0  0   125 )  (C)   ( 625   0  0   625 )  (D)   ( 3125   0  0   3125 )",
+      "options": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "difficulty": "Easy",
+      "year": null,
+      "marks": 1,
+      "negativeMarks": 0.33,
+      "createdAt": "2026-01-15T21:48:04.061Z",
+      "createdBy": 1
+    },
+    {
+      "id": 124,
+      "subject": "computer-organization",
+      "topic": "cpu-architecture",
+      "question": "The   value of   𝑥   such that   𝑥   >   1 ,   satisfying the equation   ∫   𝑡   ln   𝑡   𝑑𝑡   =   1  4  𝑥  1   is",
+      "options": [
+        "√ 𝑒",
+        "𝑒",
+        "𝑒 2",
+        ""
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "difficulty": "Easy",
+      "year": null,
+      "marks": 1,
+      "negativeMarks": 0.33,
+      "createdAt": "2026-01-15T21:48:04.069Z",
+      "createdBy": 1
+    },
+    {
+      "id": 125,
+      "subject": "data-structures",
+      "topic": "trees",
+      "question": "Consider a   binary tree   𝑇   in which   every node has   either zero or   two children.  Let   𝑛   >   0   be the number of nodes in   𝑇 .  Which   ONE of   the following is the number of nodes   in   𝑇   that have exactly two  children ?",
+      "options": [
+        "𝑛   −   2  2",
+        "𝑛   −   1  2",
+        "𝑛  2",
+        ""
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "difficulty": "Easy",
+      "year": null,
+      "marks": 1,
+      "negativeMarks": 0.33,
+      "createdAt": "2026-01-15T21:48:04.077Z",
+      "createdBy": 1
+    },
+    {
+      "id": 126,
+      "subject": "engineering-mathematics",
+      "topic": "linear-algebra",
+      "question": "Let   𝐿 ,   𝑀 ,   and   𝑁   be non - singular matrices of order 3 satisfying the equations  𝐿 2   =   𝐿 − 1   ,   𝑀   =   𝐿 8   and   𝑁   =   𝐿 2 .  Which ONE of the following is the value of the determinant of   ( 𝑀   −   𝑁 ) ?",
+      "options": [
+        "0",
+        "1",
+        "2",
+        "3"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "difficulty": "Easy",
+      "year": null,
+      "marks": 1,
+      "negativeMarks": 0.33,
+      "createdAt": "2026-01-15T21:48:04.084Z",
+      "createdBy": 1
+    },
+    {
+      "id": 127,
+      "subject": "digital-logic",
+      "topic": "boolean-algebra",
+      "question": "Let   𝑃 ( 𝑥 )   be an arbitrary predicate over the domain of natural numbers.  Which   ONE   of the following   statements   is TRUE?  (A)   ( 𝑃 ( 0 )   ∧   ( ∀ 𝑥   [ 𝑃 ( 𝑥 )   ⇒   𝑃 ( 𝑥   +   1 ) ] ) )   ⇒   ( ∀ 𝑥   𝑃 ( 𝑥 ) )  (B)   ( 𝑃 ( 0 )   ∧   ( ∀ 𝑥   [ 𝑃 ( 𝑥 )   ⇒   𝑃 ( 𝑥   −   1 ) ] ) )   ⇒   ( ∀ 𝑥   𝑃 ( 𝑥 ) )  (C)   ( 𝑃 ( 1000 )   ∧   ( ∀ 𝑥   [ 𝑃 ( 𝑥 )   ⇒   𝑃 ( 𝑥   −   1 ) ] ) )   ⇒   ( ∀ 𝑥   𝑃 ( 𝑥 ) )  (D)   ( 𝑃 ( 1000 )   ∧   ( ∀ 𝑥   [ 𝑃 ( 𝑥 )   ⇒   𝑃 ( 𝑥   +   1 ) ] ) )   ⇒   ( ∀ 𝑥   𝑃 ( 𝑥 ) )\n\nComputer Science and Information   Technology   (CS 2 )  Organising Institute:   IIT   Roorkee   Page   14   of   48",
+      "options": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "difficulty": "Easy",
+      "year": null,
+      "marks": 1,
+      "negativeMarks": 0.33,
+      "createdAt": "2026-01-15T21:48:04.096Z",
+      "createdBy": 1
+    },
+    {
+      "id": 128,
+      "subject": "computer-networks",
+      "topic": "osi-tcp",
+      "question": "Consider the following statements:  (i)   Address Resolution Protocol ( ARP )   provides a mapping from an IP  address to the corresponding hardware (link - layer) address.  (ii)   A single TCP segment from a sender S to a receiver R cannot carry both  data   from S to R   and   acknowledgement for a segment from R to S.  Which ONE of the following is CORRECT?  (A)   Both (i) and (ii) are   TRUE  (B)   (i) is   TRUE   and   (ii) is   FALSE  (C)   (i) is   FALSE   and   (ii) is   TRUE  (D)   Both (i) and (ii) are   FALSE\n\nComputer Science and Information   Technology   (CS 2 )  Organising Institute:   IIT   Roorkee   Page   15   of   48",
+      "options": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "difficulty": "Easy",
+      "year": null,
+      "marks": 1,
+      "negativeMarks": 0.33,
+      "createdAt": "2026-01-15T21:48:04.105Z",
+      "createdBy": 1
+    },
+    {
+      "id": 129,
+      "subject": "computer-networks",
+      "topic": "network-layer",
+      "question": "Consider the routing protocols given in   List I   and the names given in   List II :  List I   List II  (i)   Distance vector routing",
+      "options": [
+        "Dijkstra  For matching of items in   List I   with those in   List II,   which ONE of the following  options is   CORRECT ?",
+        "",
+        "",
+        ""
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "difficulty": "Easy",
+      "year": null,
+      "marks": 1,
+      "negativeMarks": 0.33,
+      "createdAt": "2026-01-15T21:48:04.116Z",
+      "createdBy": 1
+    },
+    {
+      "id": 130,
+      "subject": "computer-networks",
+      "topic": "network-layer",
+      "question": "A machine receives an IPv4 datagram. The protocol field of the IPv4 header has the  protocol number of a protocol X.  Which ONE of the following   is NOT a possible candidate   for X?  (A)   Internet Control Message Protocol (ICMP)  (B)   Internet Group   Management Protocol (IGMP)  (C)   Open Shortest Path First (OSPF)  (D)   Routing Information Protocol (RIP)\n\nComputer Science and Information   Technology   (CS 2 )  Organising Institute:   IIT   Roorkee   Page   17   of   48",
+      "options": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "difficulty": "Easy",
+      "year": null,
+      "marks": 1,
+      "negativeMarks": 0.33,
+      "createdAt": "2026-01-15T21:48:04.122Z",
+      "createdBy": 1
+    },
+    {
+      "id": 131,
+      "subject": "compiler-design",
+      "topic": "parsing",
+      "question": "Consider the   following C program :  #include   <stdio.h>  void   stringcopy(char   *,   char   *);  int   main(){  char   a[30]   =   \"@#Hello   World!\";  stringcopy(a,   a   +   2);  printf(\"%s \\ n\",",
+      "options": [
+        "@#Hello   World!",
+        "Hello   World!",
+        "ello   World!",
+        ""
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "difficulty": "Easy",
+      "year": null,
+      "marks": 1,
+      "negativeMarks": 0.33,
+      "createdAt": "2026-01-15T21:48:04.131Z",
+      "createdBy": 1
+    },
+    {
+      "id": 132,
+      "subject": "digital-logic",
+      "topic": "boolean-algebra",
+      "question": "0   Consider an unordered list of   𝑁   distinct   integers.  What is the minimum number of element   comparison s   required to find an integer  in the list   that   is   NOT   the largest   in the list ?",
+      "options": [
+        "1",
+        "𝑁   −   1",
+        "𝑁",
+        "2 𝑁   −   1"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "difficulty": "Easy",
+      "year": null,
+      "marks": 1,
+      "negativeMarks": 0.33,
+      "createdAt": "2026-01-15T21:48:04.142Z",
+      "createdBy": 1
+    },
+    {
+      "id": 133,
+      "subject": "compiler-design",
+      "topic": "code-optimization",
+      "question": "Consider the following statements about the use of backpatching in a compiler for  intermediate code generation:  (I)   Backpatching can be used to generate code for Boolean expression in  one pass.  (II)   Backpatching   can   be   used   to   generate   code   for   flow - of - control  statements in one pass.  Which ONE of the following options is CORRECT?  (A)   Only (I) is correct.  (B)   Only (II) is correct.  (C)   Both (I) and (II) are correct.  (D)   Neither (I) nor (II) is correct .\n\nComputer Science and Information   Technology   (CS 2 )  Organising Institute:   IIT   Roorkee   Page   19   of   48",
+      "options": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "difficulty": "Easy",
+      "year": null,
+      "marks": 1,
+      "negativeMarks": 0.33,
+      "createdAt": "2026-01-15T21:48:04.150Z",
+      "createdBy": 1
+    },
+    {
+      "id": 134,
+      "subject": "compiler-design",
+      "topic": "parsing",
+      "question": "Given the following syntax   directed translation rules:  Rule 1:   𝑅  →   𝐴𝐵   { 𝐵 .   𝑖   =   𝑅 .   𝑖   −   1 ;   𝐴 .   𝑖   =   𝐵 .   𝑖 ;   𝑅 .   𝑖   =   𝐴 .   𝑖   +   1 ;   }  Rule 2:   𝑃  →   𝐶𝐷   { 𝑃 .   𝑖   =   𝐶 .   𝑖   +   𝐷 .   𝑖 ;   𝐷 .   𝑖   =   𝐶 .   𝑖   +   2 ;   }  Rule 3:   𝑄  →   𝐸𝐹   { 𝑄 .   𝑖   =   𝐸 .   𝑖   +   𝐹 .   𝑖 ;   }  Which ONE is the   CORRECT   option among the following?",
+      "options": [
+        "Rule 1 is   S - attributed and L - attributed; Rule 2 is S - attributed and not L - attributed;  Rule 3 is neither S - attributed nor L - attributed",
+        "Rule 1 is neither S - attributed nor L - attributed; Rule 2 is S - attributed and   L -  attributed; Rule 3 is S - attributed and   L - attributed",
+        "Rule 1 is neither S - attributed nor L - attributed; Rule 2 is not S - attributed and  is   L - attributed; Rule 3 is S - attributed and L - attributed",
+        ""
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "difficulty": "Easy",
+      "year": null,
+      "marks": 1,
+      "negativeMarks": 0.33,
+      "createdAt": "2026-01-15T21:48:04.158Z",
+      "createdBy": 1
+    },
+    {
+      "id": 135,
+      "subject": "computer-networks",
+      "topic": "network-layer",
+      "question": "Consider a network that uses   Ethernet   and   IPv4. Assume   that   IPv4 headers   do   no t  use any   option s field .   E ach Ethernet frame can carry   a   maximum   of   1500 bytes in  its data field .   A UDP   segment is   transmitte",
+      "options": [
+        "5 fragments, 1488 bytes",
+        "6 fragments, 88 bytes",
+        "6 fragments, 108 bytes",
+        "6 fragments, 116 bytes"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "difficulty": "Easy",
+      "year": null,
+      "marks": 1,
+      "negativeMarks": 0.33,
+      "createdAt": "2026-01-15T21:48:04.165Z",
+      "createdBy": 1
+    },
+    {
+      "id": 136,
+      "subject": "compiler-design",
+      "topic": "parsing",
+      "question": "Which   ONE   of   the following   language s   is   a ccepted by a deterministic push down  automaton?",
+      "options": [
+        "Any regular language.",
+        "Any context - free language.",
+        "Any language accep ted by a non - deterministic push down automaton .",
+        ""
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "difficulty": "Easy",
+      "year": null,
+      "marks": 1,
+      "negativeMarks": 0.33,
+      "createdAt": "2026-01-15T21:48:04.173Z",
+      "createdBy": 1
+    },
+    {
+      "id": 137,
+      "subject": "toc",
+      "topic": "regular-languages",
+      "question": "Let   𝐺 1 ,   𝐺 2   be Context Free Grammars (CFGs) and   𝑅   be a regular expression. For a  grammar   𝐺 ,   let   𝐿 ( 𝐺 )   denote the   language generated by   𝐺 .  Which ONE among the following questions is decidable?  (A)   Is   𝐿 ( 𝐺 1 )   =   𝐿 ( 𝐺 2 ) ?  (B)   Is   𝐿 ( 𝐺 1 )   ∩   𝐿 ( 𝐺 2 )   =   ∅ ?  (C)   Is   𝐿 ( 𝐺 1 )   =   𝐿 ( 𝑅 ) ?  (D)   Is   𝐿 ( 𝐺 1 )   =   ∅ ?",
+      "options": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "difficulty": "Easy",
+      "year": null,
+      "marks": 1,
+      "negativeMarks": 0.33,
+      "createdAt": "2026-01-15T21:48:04.180Z",
+      "createdBy": 1
+    },
+    {
+      "id": 138,
+      "subject": "operating-systems",
+      "topic": "process-management",
+      "question": "Processes   𝑃 1 ,   𝑃 2 ,   𝑃 3 ,   𝑃 4   arrive in that order at times   0, 1, 2 ,   and 8   milliseconds  respectively , and have execution times of   10, 13, 6 , and 9 milliseconds   respectively.  Shortest Remaining Time   First (SRTF)   algorithm   is used as the CPU   scheduling  policy. Ignore context switching times.  Which ONE of the following   correctly gives the average turnaround time of the four  processes   in milliseconds ?",
+      "options": [
+        "22",
+        "15",
+        "37",
+        ""
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "difficulty": "Easy",
+      "year": null,
+      "marks": 1,
+      "negativeMarks": 0.33,
+      "createdAt": "2026-01-15T21:48:04.192Z",
+      "createdBy": 1
+    },
+    {
+      "id": 139,
+      "subject": "dbms",
+      "topic": "sql",
+      "question": "An audit of a banking transactions system has found that on an earlier occasion, two  joint holders of account   𝐴   attempted simultaneous transfers of Rs. 10000 each from  account   𝐴   to account   𝐵 . Both transactions read the same value ,   Rs . 11000 ,   as the  initial balance in   𝐴   and were allowed to go through.   𝐵   was credited Rs. 10000 twice.  𝐴   was debited only once and ended up with a balance of Rs. 1000.  Which   of   the   following properties   is/ are   certain to have been violated by the  system?",
+      "options": [
+        "Atomicity",
+        "Consistency",
+        "Isolation",
+        "Durability"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "difficulty": "Easy",
+      "year": null,
+      "marks": 1,
+      "negativeMarks": 0.33,
+      "createdAt": "2026-01-15T21:48:04.202Z",
+      "createdBy": 1
+    },
+    {
+      "id": 140,
+      "subject": "computer-organization",
+      "topic": "cpu-architecture",
+      "question": "Which of the following   is/ are part of an   Instruction Set Architecture of a processor?",
+      "options": [
+        "The size of the cache memory",
+        "The clock frequency of the processor",
+        "The number of cache memory levels",
+        ""
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "difficulty": "Easy",
+      "year": null,
+      "marks": 1,
+      "negativeMarks": 0.33,
+      "createdAt": "2026-01-15T21:48:04.209Z",
+      "createdBy": 1
+    },
+    {
+      "id": 141,
+      "subject": "data-structures",
+      "topic": "graphs",
+      "question": "Which of the following statements regarding Breadth First Search (BFS) and  Depth First Search (DFS) on an undirected simple graph   G   is/ are TRUE?",
+      "options": [
+        "A DFS tree   of   𝐺   is a Shortest Path tree   of   𝐺 .",
+        "Every non - tree edge of   G   with respect to a DFS tree is a forward/back edge.",
+        "",
+        ""
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "difficulty": "Easy",
+      "year": null,
+      "marks": 1,
+      "negativeMarks": 0.33,
+      "createdAt": "2026-01-15T21:48:04.216Z",
+      "createdBy": 1
+    },
+    {
+      "id": 142,
+      "subject": "toc",
+      "topic": "decidability",
+      "question": "Consider the two lists   List I   and   List II   given below :  For matching of items in   List I   with those in   List II ,   w hich of the following  option ( s )   is/are   CORRECT ?  List I   List II  (i )   Context free languages",
+      "options": [
+        "Closed under   intersection",
+        "",
+        "",
+        ""
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "difficulty": "Easy",
+      "year": null,
+      "marks": 1,
+      "negativeMarks": 0.33,
+      "createdAt": "2026-01-15T21:48:04.224Z",
+      "createdBy": 1
+    },
+    {
+      "id": 143,
+      "subject": "compiler-design",
+      "topic": "parsing",
+      "question": "Consider   the following logic circuit diagram .  W hich   is/ are   the   CORRECT   option ( s )   for the output function   𝐹 ?",
+      "options": [
+        "𝑋   𝑌 ̅ ̅ ̅ ̅ ̅",
+        "𝑋 ̅   +   𝑌 ̅   +   𝑋 𝑌 ̅",
+        "𝑋   𝑌 ̅ ̅ ̅ ̅ ̅   +   𝑋 ̅   +   𝑋 𝑌 ̅",
+        "𝑋   +   𝑌 ̅"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "difficulty": "Easy",
+      "year": null,
+      "marks": 1,
+      "negativeMarks": 0.33,
+      "createdAt": "2026-01-15T21:48:04.233Z",
+      "createdBy": 1
+    },
+    {
+      "id": 144,
+      "subject": "digital-logic",
+      "topic": "boolean-algebra",
+      "question": "The   following   two   signed   2’s   complement   numbers   (multiplicand   M   and  multiplier Q) are being multiplied using Booth’s algorithm:  M: 1100 1101 1110 1101 and Q: 1010 0100 1010 1010  The total number of addition and subtraction operations to be performed is  ____ _ ______ .   ( Answer   in integer)\n\nComputer Science and Information   Technology   (CS 2 )  Organising Institute:   IIT   Roorkee   Page   26   of   48",
+      "options": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "difficulty": "Easy",
+      "year": null,
+      "marks": 1,
+      "negativeMarks": 0.33,
+      "createdAt": "2026-01-15T21:48:04.242Z",
+      "createdBy": 1
+    },
+    {
+      "id": 145,
+      "subject": "engineering-mathematics",
+      "topic": "differential-equations",
+      "question": "int   x=126,y=105;  do   {  if(x>y)   x=x - y;  else   y=y - x;  }   while(x!=y);  printf(\"%d\",x);  The output of the   given C code segment   is ________.   (A nswer in integer)",
+      "options": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "difficulty": "Easy",
+      "year": null,
+      "marks": 1,
+      "negativeMarks": 0.33,
+      "createdAt": "2026-01-15T21:48:04.250Z",
+      "createdBy": 1
+    },
+    {
+      "id": 146,
+      "subject": "digital-logic",
+      "topic": "sequential-circuits",
+      "question": "In a 4 - bit ripple counter, if the period of the waveform at the last flip - flop is 64  microseconds, then the frequency of the ripple counter   in   kHz   is ________ .   ( Answer  in integer)",
+      "options": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "difficulty": "Easy",
+      "year": null,
+      "marks": 1,
+      "negativeMarks": 0.33,
+      "createdAt": "2026-01-15T21:48:04.260Z",
+      "createdBy": 1
+    },
+    {
+      "id": 147,
+      "subject": "digital-logic",
+      "topic": "boolean-algebra",
+      "question": "Suppose the values   10 ,   − 4 ,   15 ,   30 ,   20 ,   5 ,   60 ,   19   are inserted in that order into an  initially empty binary search tree. Let   𝑇   be the resulting binary search tree.  The number of edges in the path from the node containing   19   to the root node of   𝑇  is   ___________ .   ( Answer   in integer)\n\nComputer Science and Information   Technology   (CS 2 )  Organising Institute:   IIT   Roorkee   Page   27   of   48",
+      "options": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "difficulty": "Easy",
+      "year": null,
+      "marks": 1,
+      "negativeMarks": 0.33,
+      "createdAt": "2026-01-15T21:48:04.270Z",
+      "createdBy": 1
+    },
+    {
+      "id": 148,
+      "subject": "data-structures",
+      "topic": "arrays-linked-lists",
+      "question": "5   Carry TWO marks Each",
+      "options": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "difficulty": "Easy",
+      "year": null,
+      "marks": 1,
+      "negativeMarks": 0.33,
+      "createdAt": "2026-01-15T21:48:04.279Z",
+      "createdBy": 1
+    },
+    {
+      "id": 149,
+      "subject": "computer-networks",
+      "topic": "osi-tcp",
+      "question": "Suppose we are transmitting frames between two nodes using Stop - and - Wait  protocol. The frame size is 3000 bits. The transmission rate of the channel is 2000  bps (bits/secon",
+      "options": [
+        "88.23",
+        "93.75",
+        "85.44",
+        ""
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "difficulty": "Easy",
+      "year": null,
+      "marks": 1,
+      "negativeMarks": 0.33,
+      "createdAt": "2026-01-15T21:48:04.286Z",
+      "createdBy": 1
+    },
+    {
+      "id": 150,
+      "subject": "data-structures",
+      "topic": "graphs",
+      "question": "Let   𝐺   be an edge - weighted   un directed graph   with positive edge weights . Suppose a  positive   constant   𝛼   is added to   the weight of every edge .  Which ONE of the following statements   is TRUE   about the minimum spanning  trees (MSTs) and shortest paths (SPs) in   𝐺   before and   after the edge weight update ?",
+      "options": [
+        "Every MST remains an MST, and every SP remains an SP.",
+        "MSTs need not remain MSTs,   and   every SP remains an SP.",
+        "E very MST remains an MST , and   SPs need not remain SPs.",
+        ""
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "difficulty": "Easy",
+      "year": null,
+      "marks": 1,
+      "negativeMarks": 0.33,
+      "createdAt": "2026-01-15T21:48:04.295Z",
+      "createdBy": 1
+    },
+    {
+      "id": 151,
+      "subject": "data-structures",
+      "topic": "arrays-linked-lists",
+      "question": "A meld operation on two instances of a data structure   combines   them into one single  instance of the same data structure. Consider the following data structures:  P :   Unsorted doubly linked list with pointers to the head node and tail node  of the list.  Q :   Min - heap implemented using an array.  R :   Binary Search Tree.  Which ONE of the   following   options gives t he worst - case time complexities for  meld operation on instances of size   𝑛   of these data structures ?  (A)   P:   Θ ( 1 ) , Q:   Θ ( 𝑛 ) , R:   Θ ( 𝑛 )  (B)   P:   Θ ( 1 ) , Q:   Θ ( 𝑛   log   𝑛 ) , R:   Θ ( 𝑛 )  (C)   P:   Θ ( 𝑛 ) , Q:   Θ ( 𝑛   log   𝑛 ) , R:   Θ ( 𝑛 2 )  (D)   P:   Θ ( 1 ) , Q:   Θ ( 𝑛 ) , R:   Θ ( 𝑛   log   𝑛 )\n\nComputer Science and Information   Technology   (CS 2 )  Organising Institute:   IIT   Roorkee   Page   30   of   48",
+      "options": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "difficulty": "Easy",
+      "year": null,
+      "marks": 1,
+      "negativeMarks": 0.33,
+      "createdAt": "2026-01-15T21:48:04.304Z",
+      "createdBy": 1
+    },
+    {
+      "id": 152,
+      "subject": "computer-organization",
+      "topic": "memory-hierarchy",
+      "question": "For a direct - mapped cache, 4 bits are used for the tag field and 12 bits are used to  index into a cache block. The size of each cache block is one byte. Assume that  there is no other   information stored for each cache block.  Which ONE of the following is the CORRECT option for the sizes of the main  memory and the cache memory in this system (by te addressable), respectively?",
+      "options": [
+        "64   KB and 4 KB",
+        "128   KB and 16 KB",
+        "64 KB and   8   KB",
+        "128   KB and 6 KB"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "difficulty": "Easy",
+      "year": null,
+      "marks": 1,
+      "negativeMarks": 0.33,
+      "createdAt": "2026-01-15T21:48:04.313Z",
+      "createdBy": 1
+    },
+    {
+      "id": 153,
+      "subject": "compiler-design",
+      "topic": "parsing",
+      "question": "Given a Context - Free Grammar   𝐺   as follows:  𝑆  →   𝐴𝑎   |   𝑏𝐴𝑐   |   𝑑𝑐   |   𝑏𝑑𝑎  𝐴  →   𝑑  Which ONE of the following statements is TRUE?  (A)   𝐺   is   neither LALR(1)   no r   SLR(1)  (B)   𝐺   is   CLR (1), not LALR(1)  (C)   𝐺   is   LALR (1), not   SL R(1)  (D)   𝐺   is   LALR (1),   also   S LR(1)\n\nComputer Science and Information   Technology   (CS 2 )  Organising Institute:   IIT   Roorkee   Page   31   of   48",
+      "options": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "difficulty": "Easy",
+      "year": null,
+      "marks": 1,
+      "negativeMarks": 0.33,
+      "createdAt": "2026-01-15T21:48:04.322Z",
+      "createdBy": 1
+    },
+    {
+      "id": 154,
+      "subject": "digital-logic",
+      "topic": "boolean-algebra",
+      "question": "An array   𝐴   of length   𝑛   with distinct elements is said to be bitonic if there is an index  1   ≤   𝑖   ≤   𝑛   such that   𝐴 [ 1 .   .   𝑖 ] is sorted in the non - decreasing order and   𝐴 [ 𝑖   +   1   .   .   𝑛 ]  is sorted in the non - increasing order.  Which ONE of the following represents   the best possible asymptotic bound for the  worst - case number of comparisons by an algorithm that sear ches for an element in  a bitonic   array   𝐴 ?  (A)   Θ ( 𝑛 )  (B)   Θ ( 1 )  (C)   Θ ( log 2   𝑛 )  (D)   Θ ( log   𝑛 )",
+      "options": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "difficulty": "Easy",
+      "year": null,
+      "marks": 1,
+      "negativeMarks": 0.33,
+      "createdAt": "2026-01-15T21:48:04.331Z",
+      "createdBy": 1
+    },
+    {
+      "id": 155,
+      "subject": "digital-logic",
+      "topic": "boolean-algebra",
+      "question": "Let   ℱ   be   the   set   of   all   functions   from   { 1 ,   …   ,   𝑛 }   to   { 0 , 1 } .   Define  the binary relation   ≼   on   ℱ   as follows:  ∀ 𝑓 ,   𝑔   ∈   ℱ ,   𝑓   ≼   𝑔   if and only if   ∀ 𝑥   ∈   { 1 ,   …   ,   𝑛 } ,   𝑓 ( 𝑥 )   ≤   𝑔 ( 𝑥 ) ,   where   0   ≤   1 .  Which of the following statement ( s )   is /are   TRUE?  (A)   ≼   is a symmetric relation  (B)   ( ℱ ,   ≼   )   is a partial order  (C)   ( ℱ ,   ≼   )   is a lattice  (D)   ≼   is an equivalence relation\n\nComputer Science and Information   Technology   (CS 2 )  Organising Institute:   IIT   Roorkee   Page   32   of   48",
+      "options": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "difficulty": "Easy",
+      "year": null,
+      "marks": 1,
+      "negativeMarks": 0.33,
+      "createdAt": "2026-01-15T21:48:04.338Z",
+      "createdBy": 1
+    },
+    {
+      "id": 156,
+      "subject": "digital-logic",
+      "topic": "boolean-algebra",
+      "question": "Given the following Karnaugh Map for a Boolean function   𝐹 ( 𝑤 ,   𝑥 ,   𝑦 ,   𝑧 ) :  Which   one or more   of the following Boolean expression ( s )   represent (s)   𝐹 ?",
+      "options": [
+        "𝑤 ̅   𝑥 ̅   𝑦 ̅   𝑧 ̅   +   𝑤 𝑥 ̅   𝑦 ̅   𝑧 ̅   +   𝑤 ̅   𝑥 ̅   𝑦 𝑧 ̅   +   𝑤 𝑥 ̅   𝑦 𝑧 ̅   +   𝑥𝑧",
+        "𝑤 ̅   𝑥 ̅   𝑦 ̅   𝑧 ̅   +   𝑤 ̅   𝑥 ̅   𝑦 𝑧 ̅   +   𝑤 𝑥 ̅   𝑦𝑧   +   𝑥𝑧",
+        "𝑤 ̅   𝑥 ̅   𝑦 ̅   𝑧 ̅   +   𝑤 𝑥 ̅   𝑦 ̅   𝑧 ̅   +   𝑤 𝑥 ̅   𝑦 ̅   𝑧   +   𝑥𝑧",
+        ""
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "difficulty": "Easy",
+      "year": null,
+      "marks": 1,
+      "negativeMarks": 0.33,
+      "createdAt": "2026-01-15T21:48:04.346Z",
+      "createdBy": 1
+    },
+    {
+      "id": 157,
+      "subject": "computer-networks",
+      "topic": "osi-tcp",
+      "question": "Consider a system of linear equations   𝑃𝑋   =   𝑄   where   𝑃   ∈   ℝ 3 × 3   and Q   ∈   ℝ 3 × 1 .  Suppose   𝑃   has an   LU   decomposition,   𝑃   =   𝐿𝑈 , where  𝐿   =   [  1   0   0  𝑙 21   1   0  𝑙 31   𝑙 32   1  ]   and   𝑈   =   [  𝑢 11   𝑢 12   𝑢 13  0   𝑢 22   𝑢 23  0   0   𝑢 33  ] .  Which of the   following statement ( s )   is/are TRUE?",
+      "options": [
+        "The system   𝑃𝑋   =   𝑄   can be solved by first solving   𝐿𝑌   =   𝑄   and then   𝑈𝑋   =   𝑌 .",
+        "If   𝑃   is invertible, then both   𝐿   and   𝑈   are invertible.",
+        "If   𝑃   is singular, then at least one of the diagonal elements of   𝑈   is zero.",
+        ""
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "difficulty": "Easy",
+      "year": null,
+      "marks": 1,
+      "negativeMarks": 0.33,
+      "createdAt": "2026-01-15T21:48:04.355Z",
+      "createdBy": 1
+    },
+    {
+      "id": 158,
+      "subject": "digital-logic",
+      "topic": "boolean-algebra",
+      "question": "Consider a stack data structure into which we can   PUSH   and   POP   records. Assume  that each record pushed in the stack has a positive integer key and that all keys are  distinct.  We wish to augment the stack data structure with an   𝑂 ( 1 )   time MIN operation that  returns a pointer to the record with smallest key present in the stack  1)   without deleting the corresponding record, and  2)   without increasing the complexities of the standard stack operations.  Which   one or more   of the follo wing approach ( es )   can achieve it?",
+      "options": [
+        "Keep with every record in the stack ,   a pointer to the record with the smallest key  below it.",
+        "Keep a pointer to the   record with the smallest key in the stack.",
+        "Keep an auxiliary array in which the key values of the records in the stack are  maintained in sorted order.",
+        ""
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "difficulty": "Easy",
+      "year": null,
+      "marks": 1,
+      "negativeMarks": 0.33,
+      "createdAt": "2026-01-15T21:48:04.364Z",
+      "createdBy": 1
+    },
+    {
+      "id": 159,
+      "subject": "dbms",
+      "topic": "relational-model",
+      "question": "Consider the following relational schema along with all the functional dependencies  that hold on them .  R1(A, B, C, D, E):   {   𝐷   →   𝐸 ,   𝐸𝐴   →   𝐵 ,   𝐸𝐵   →   𝐶 }  R2(A, B, C,",
+      "options": [
+        "R1   is in 3NF",
+        "R2   is in 3NF",
+        "R1   is NOT in 3NF",
+        ""
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "difficulty": "Easy",
+      "year": null,
+      "marks": 1,
+      "negativeMarks": 0.33,
+      "createdAt": "2026-01-15T21:48:04.371Z",
+      "createdBy": 1
+    },
+    {
+      "id": 160,
+      "subject": "operating-systems",
+      "topic": "memory-management",
+      "question": "Consider a demand paging system with three frames, and the following page  reference string: 1 2 3 4 5 4 1 6 4 5 1 3 2. The contents   of the   frames are as follows  initially and after   each   reference   (from left to right) :  initially   after  -   1*   2*   3*   4*   5*   4   1   6*   4   5   1*   3*   2*  -   1   1   1   1   1   1   1   6   6   6   6   6   2  -   -   2   2   4   4   4   4   4   4   4   1   1   1  -   -   -   3   3   5   5   5   5   5   5   5   3   3  The * - mark ed references cause page replacements.  Which   one or more   of the following could be the page replacement policy /policies  in use?",
+      "options": [
+        "Least Recently Used   page replacement policy",
+        "Least Frequently Used   page   replacement policy",
+        "Most Frequently Used   page replacement policy",
+        ""
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "difficulty": "Easy",
+      "year": null,
+      "marks": 1,
+      "negativeMarks": 0.33,
+      "createdAt": "2026-01-15T21:48:04.379Z",
+      "createdBy": 1
+    },
+    {
+      "id": 161,
+      "subject": "operating-systems",
+      "topic": "process-management",
+      "question": "𝑃   =   { 𝑃 1 ,   𝑃 2 ,   𝑃 3 ,   𝑃 4 }   consists of all active processes in an operating system.  𝑅   =   { 𝑅 1 ,   𝑅 2 ,   𝑅 3 ,   𝑅 4 }   consists of single instance s of distinct types of   resources in the  system.  The resource allocation graph has the following assignment and claim edges.  Assignment edges:   𝑅 1   →   𝑃 1 ,   𝑅 2   →   𝑃 2 ,   𝑅 3   →   𝑃 3 ,   𝑅 4   →   𝑃 4   (the assignment edge  𝑅 1   →   𝑃 1   means resource   𝑅 1   is assigned to process   𝑃 1   , an d so on for others)  Claim edges:   𝑃 1   →   𝑅 2 ,   𝑃 2   →   𝑅 3 ,   𝑃 3   →   𝑅 1 ,   𝑃 2   →   𝑅 4 ,   𝑃 4   →   𝑅 2   (the claim edge  𝑃 1   →   𝑅 2   means   process   𝑃 1   is waiting for resource   𝑅 2   ,   and so on for others)  Which of the   following statement ( s )   is/ are   CORRECT ?",
+      "options": [
+        "A borting   𝑃 1   makes the system deadlock free.",
+        "A borting   𝑃 3   makes the system deadlock free.",
+        "A borting   𝑃 2   makes the system deadlock free.",
+        ""
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "difficulty": "Easy",
+      "year": null,
+      "marks": 1,
+      "negativeMarks": 0.33,
+      "createdAt": "2026-01-15T21:48:04.386Z",
+      "createdBy": 1
+    },
+    {
+      "id": 162,
+      "subject": "digital-logic",
+      "topic": "sequential-circuits",
+      "question": "Three floating point numbers   𝑋 ,   𝑌 ,   and   𝑍   are stored in three registers R X , R Y , and  R Z ,   respectively   in   IEEE   754   single   precision   format   as   given   below   in  hexadecimal:  R X   = 0xC1100000, R Y   = 0x40C00000, and R Z   = 0x41400000  Which of the following   option ( s )   is/ are   CORRECT ?",
+      "options": [
+        "2 𝑌   –   𝑍   =   0",
+        "4 𝑋   +   3 𝑍   =   0",
+        "𝑋   +   𝑌   +   𝑍   =   0",
+        ""
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "difficulty": "Easy",
+      "year": null,
+      "marks": 1,
+      "negativeMarks": 0.33,
+      "createdAt": "2026-01-15T21:48:04.395Z",
+      "createdBy": 1
+    },
+    {
+      "id": 163,
+      "subject": "digital-logic",
+      "topic": "boolean-algebra",
+      "question": "Which   of the following Boolean algebra ic   equation ( s )   is/are   CORRECT ?",
+      "options": [
+        "𝐴 ̅   𝐵   𝐶   +   𝐴   𝐵 ̅   𝐶 ̅   +   𝐴 ̅   𝐵 ̅   𝐶 ̅   +   𝐴   𝐵 ̅   𝐶   +   𝐴   𝐵   𝐶   =   𝐵   𝐶   +   𝐵 ̅   𝐶 ̅   +   𝐴 ̅   𝐵 ̅",
+        "𝐴   𝐵   +   𝐴 ̅   𝐶   +   𝐵   𝐶   =   𝐴   𝐵   +   𝐴 ̅   𝐶",
+        "",
+        ""
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "difficulty": "Easy",
+      "year": null,
+      "marks": 1,
+      "negativeMarks": 0.33,
+      "createdAt": "2026-01-15T21:48:04.402Z",
+      "createdBy": 1
+    },
+    {
+      "id": 164,
+      "subject": "digital-logic",
+      "topic": "boolean-algebra",
+      "question": "Consider two grammars   𝐺 1   and   𝐺 2   with the production rules given below:  𝐺 1 :   𝑆   →   𝑖𝑓   𝐸   𝑡 ℎ 𝑒𝑛   𝑆   |   𝑖𝑓   𝐸   𝑡 ℎ 𝑒𝑛   𝑆   𝑒𝑙𝑠𝑒   𝑆   |   𝑎  𝐸   →   𝑏  𝐺 2 :   𝑆   →   𝑖𝑓   𝐸   𝑡 ℎ 𝑒𝑛   𝑆   |   𝑀  𝑀   →   𝑖𝑓   𝐸   𝑡 ℎ 𝑒𝑛   𝑀   𝑒𝑙𝑠𝑒   𝑆   |   𝑐  𝐸   →   𝑏  where   𝑖𝑓 ,   𝑡 ℎ 𝑒𝑛 ,   𝑒𝑙𝑠𝑒 ,   𝑎 ,   𝑏 ,   𝑐   are the terminals.  Which of the following   option ( s )   is/ are   CORRECT ?  (A)   𝐺 1   is not   𝐿𝐿 ( 1 )   and   𝐺 2   is   𝐿𝐿 ( 1 ) .  (B)   𝐺 1   is   𝐿𝐿 ( 1 )   and   𝐺 2   is not   𝐿𝐿 ( 1 ) .  (C)   𝐺 1   and   𝐺 2   are not   𝐿𝐿 ( 1 ) .  (D)   𝐺 1   and   𝐺 2   are ambiguous.\n\nComputer Science and Information   Technology   (CS 2 )  Organising Institute:   IIT   Roorkee   Page   40   of   48",
+      "options": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "difficulty": "Easy",
+      "year": null,
+      "marks": 1,
+      "negativeMarks": 0.33,
+      "createdAt": "2026-01-15T21:48:04.411Z",
+      "createdBy": 1
+    },
+    {
+      "id": 165,
+      "subject": "toc",
+      "topic": "regular-languages",
+      "question": "Let   Σ   =   { 𝑎 ,   𝑏 ,   𝑐 } .   For   𝑥   ∈   Σ ∗ ,   and   𝛼   ∈   Σ ,   let   # 𝛼 ( 𝑥 )   denote the number of  occurrences of   𝛼   in   𝑥 .  Which   one or more   of the following   option(s) define(s)   regular   language (s) ?",
+      "options": [
+        "{ 𝑎 𝑚 𝑏 𝑛   |   𝑚 ,   𝑛   ≥   0 }",
+        "{ 𝑎 ,   𝑏 } ∗   ∩   { 𝑎 𝑚 𝑏 𝑛 𝑐 𝑚 − 𝑛   |   𝑚   ≥   𝑛   ≥   0 }",
+        "",
+        ""
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "difficulty": "Easy",
+      "year": null,
+      "marks": 1,
+      "negativeMarks": 0.33,
+      "createdAt": "2026-01-15T21:48:04.419Z",
+      "createdBy": 1
+    },
+    {
+      "id": 166,
+      "subject": "dbms",
+      "topic": "transactions",
+      "question": "Consider the database transactions T1 and T2,   and data items X and Y. Which of  the schedule(s ) is/are conflict serializable?  (A)   R1(X), W2(X), W1(Y), W2(Y), R1(X), W1(X), COMMIT(T2),   COMMIT(T1)  (B)   W2(X),   R1(X),   W2(Y),   W1(Y),   R1(X),   COMMIT(T2),   W1(X),   COMMIT(T1)  (C)   R1(X), W1(Y), W2(X), W2(Y), R1(X), W1(X), COMMIT(T1), COMMIT(T2)  (D)   W2(X), R1(X), W1(Y), W2(Y), R1(X), COMMIT(T2), W1(X), COMMIT(T1)  Transaction T1  R1(X)  W1(Y)  R1(X)  W1(X)  COMMIT(T1)  Transaction T2  W2(X)  W2(Y)  COMMIT(T2)\n\nComputer Science and Information   Technology   (CS 2 )  Organising Institute:   IIT   Roorkee   Page   42   of   48",
+      "options": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "difficulty": "Easy",
+      "year": null,
+      "marks": 1,
+      "negativeMarks": 0.33,
+      "createdAt": "2026-01-15T21:48:04.428Z",
+      "createdBy": 1
+    },
+    {
+      "id": 167,
+      "subject": "dbms",
+      "topic": "sql",
+      "question": "Consider the   following relational schema:  Students   ( rollno:   integer , name:   string, age: integer, cgpa:   real)  Courses   ( courseno:   integer , cname:   string, credits: integer)  Enrolled   ( rollno:   integer ,   courseno:   integer , grade:   string)  Which of the following   options   is/are correct   SQL   query/ queries   to retrieve   the  names of the students enrolled in   course number (i.e.,   course no)   1470 ?  (A)   SELECT   S.name  FROM   Students   S  WHERE   EXISTS   (SELECT   *   FROM   Enrolled   E  WHERE   E.courseno   =   1470  AND   E.rollno   =   S.rollno) ;  (B)   SELECT   S.name  FROM   Students   S  WHERE   SIZEOF   (SELECT   *   FROM   Enrolled   E  WHERE   E.courseno   =   1470  AND   E.rollno   =   S.rollno)   >   0 ;  (C)   SELECT   S.name  FROM   Students   S  WHERE   0   <   (SELECT   COUNT(*)  FROM   Enrolled   E  WHERE   E.courseno   =   1470  AND   E.rollno   =   S.rollno) ;  (D)   SELECT   S.name  FROM   Students   S   NATURAL   JOIN   Enrolled   E  WHERE   E.courseno   =   1470 ;\n\nComputer Science and Information   Technology   (CS 2 )  Organising Institute:   IIT   Roorkee   Page   43   of   48",
+      "options": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "difficulty": "Easy",
+      "year": null,
+      "marks": 1,
+      "negativeMarks": 0.33,
+      "createdAt": "2026-01-15T21:48:04.435Z",
+      "createdBy": 1
+    },
+    {
+      "id": 168,
+      "subject": "computer-organization",
+      "topic": "memory-hierarchy",
+      "question": "Given a computing system with two levels of cache (L1 and L2) and a main  memory. The first level (L1) cache access time is 1   nanosecond ( ns )   and the “hit  rate” for L1 cache is 90% while the processor is accessing the data from L1 cache.  Whereas, for the second level (L2) cache, the “hit rate” is 80% and the “miss  penalty” for transferring data from L2 cache to L1 cache is 10   ns . The “miss  penalty” for the data to be transferred from main memory to L2 cache is 100   ns .  Then   the   average   memory   access   time   in   this   system   in   nanoseconds   is  ___________   .   ( rounded   off   to one decimal place)",
+      "options": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "difficulty": "Easy",
+      "year": null,
+      "marks": 1,
+      "negativeMarks": 0.33,
+      "createdAt": "2026-01-15T21:48:04.446Z",
+      "createdBy": 1
+    },
+    {
+      "id": 169,
+      "subject": "computer-organization",
+      "topic": "pipelining",
+      "question": "A 5 - stage instruction pipeline has stage   delays of 180, 250, 150, 170, and 250,  respectively, in nanoseconds. The delay of an inter - stage latch is 10 nanoseconds.  Assume that there are no pipeline stalls due to branches and other hazards. The time  taken to process 1000 instruct ions   in microseconds   is __________   .   (rounded off to  two decimal places)",
+      "options": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "difficulty": "Easy",
+      "year": null,
+      "marks": 1,
+      "negativeMarks": 0.33,
+      "createdAt": "2026-01-15T21:48:04.455Z",
+      "createdBy": 1
+    },
+    {
+      "id": 170,
+      "subject": "data-structures",
+      "topic": "trees",
+      "question": "In a B + -   tree where each node can hold at most four key values, a root to leaf path  consists of   the following   nodes :  A = (49, 77, 83,   - ), B = (7, 19, 33, 44) ,   C = (20*, 22*, 25*, 26*)  The * - mark ed keys signify that these are data entries in a leaf.  Assume that a pointer between keys   𝑘 1   and   𝑘 2   points to a subtree containing keys  in [ 𝑘 1 ,   𝑘 2 ) , and that when a leaf is created, the smallest key in it is   copied up into  its parent.  A record with key value 23 is inserted into the B + -   tree.  The smallest key value in the parent of the leaf that contains 25*   is __________.  ( Answer   in integer)\n\nComputer Science and Information   Technology   (CS 2 )  Organising Institute:   IIT   Roorkee   Page   44   of   48",
+      "options": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "difficulty": "Easy",
+      "year": null,
+      "marks": 1,
+      "negativeMarks": 0.33,
+      "createdAt": "2026-01-15T21:48:04.464Z",
+      "createdBy": 1
+    },
+    {
+      "id": 171,
+      "subject": "operating-systems",
+      "topic": "memory-management",
+      "question": "A computer system supports a logical address space of 2 32   bytes. It uses two - level  hierarchical paging with a page size of 4096 bytes. A logical address is divided into  a   𝑏 - bit index to the outer page table, an offset within the page of the inner page  table, and an offset within the desired page. Each entry of the inner page table uses  eight bytes. All the pages in the system have the same size.  The value of   𝑏   is ___________   .   (Answer in int eger)",
+      "options": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "difficulty": "Easy",
+      "year": null,
+      "marks": 1,
+      "negativeMarks": 0.33,
+      "createdAt": "2026-01-15T21:48:04.472Z",
+      "createdBy": 1
+    },
+    {
+      "id": 172,
+      "subject": "data-structures",
+      "topic": "graphs",
+      "question": "Consider the following algorithm   someAlgo   that takes an undirected graph   𝐺   as  input.  someAlgo( 𝐺 )  1.   Let   𝑣   be any vertex in   𝐺 . Run BFS on   𝐺   starting at  𝑣 . Let   𝑢   be a vertex in   𝐺   at maximum distance from  𝑣   as   given   by   the   BFS.  2.   Run   BFS   on   𝐺   again with   𝑢   as   the   starting   vertex.  Let   𝑧   be   the   vertex   at   maximum   distance   from   𝑢   as  given   by   the   BFS.  3.   Output   the   distance   between   𝑢   and   𝑧   in   𝐺 .  The   output   of   someAlgo( 𝑇 )   for   the   tree   shown   in   the   given   figure   is  ___________ .   ( Answer   in integer)\n\nComputer Science and Information   Technology   (CS 2 )  Organising Institute:   IIT   Roorkee   Page   45   of   48",
+      "options": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "difficulty": "Easy",
+      "year": null,
+      "marks": 1,
+      "negativeMarks": 0.33,
+      "createdAt": "2026-01-15T21:48:04.482Z",
+      "createdBy": 1
+    },
+    {
+      "id": 173,
+      "subject": "toc",
+      "topic": "finite-automata",
+      "question": "Let   Σ   =   { 1 , 2 , 3 , 4 } .   For   𝑥   ∈   Σ ∗ ,   l et   𝑝𝑟𝑜𝑑 ( 𝑥 )   be   the   product   of   symbols   in  𝑥   modulo   7 . We take   𝑝𝑟𝑜𝑑 ( 𝜖 )   =   1 , where   𝜖   is the null string.  For example,   𝑝𝑟𝑜𝑑 ( 124 )   =   ( 1   ×   2   ×   4 )   mod   7   =   1 .  Define   𝐿   =   { 𝑥   ∈   Σ ∗   |   𝑝𝑟𝑜𝑑 ( 𝑥 )   =   2 } .  The number of states in a minimum state DFA for   𝐿   is   ___________ .   (Answer in  integer)",
+      "options": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "difficulty": "Easy",
+      "year": null,
+      "marks": 1,
+      "negativeMarks": 0.33,
+      "createdAt": "2026-01-15T21:48:04.492Z",
+      "createdBy": 1
+    },
+    {
+      "id": 174,
+      "subject": "computer-organization",
+      "topic": "cpu-architecture",
+      "question": "An application executes   6 . 4   ×   10 8   number of instructions in 6.3 seconds. There are  four types of instructions, the details of which are given in the table. The duration  of a clock cycle in nanoseconds is _________ .   ( rounded off to one decimal place)  Instruction type   Clock cycles required per  instruction (CPI)  Number of instructions  executed  Branch   2   2 . 25   ×   10 8  Load   5   1 . 20   ×   10 8  Store   4   1 . 65   ×   10 8  Arithmetic   3   1 . 30   ×   10 8\n\nComputer Science and Information   Technology   (CS 2 )  Organising Institute:   IIT   Roorkee   Page   46   of   48",
+      "options": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "difficulty": "Easy",
+      "year": null,
+      "marks": 1,
+      "negativeMarks": 0.33,
+      "createdAt": "2026-01-15T21:48:04.503Z",
+      "createdBy": 1
+    },
+    {
+      "id": 175,
+      "subject": "digital-logic",
+      "topic": "boolean-algebra",
+      "question": "Consider the following C program:  #include   <stdio.h>  int   main(){  int   a;  int   arr[5]   =   {30,50,10};  int   * ptr;  ptr   =   &arr[0]   +   1;  a   =   *ptr;  (*ptr)++;  ptr++;  printf( \" %d \" ,   a   +   (*ptr)   +   arr[1]);  return   0;  }  The output of the above program is ___________ .   ( Answer   in integer)\n\nComputer Science and Information   Technology   (CS 2 )  Organising Institute:   IIT   Roorkee   Page   47   of   48",
+      "options": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "difficulty": "Easy",
+      "year": null,
+      "marks": 1,
+      "negativeMarks": 0.33,
+      "createdAt": "2026-01-15T21:48:04.511Z",
+      "createdBy": 1
+    },
+    {
+      "id": 176,
+      "subject": "compiler-design",
+      "topic": "parsing",
+      "question": "Consider the following C program:  #include   <stdio.h>  int   g(int   n)   {  return   (n+10);  }  int   f(int   n)   {  return   g(n*2);  }  int   main()   {  int   sum,   n;  sum=0;  for   (n=1;   n<3;   n++)  sum   +=   g(f(n));  printf   (\"%d\",   sum);  return   0;  }  The output of the given C program i s ________ . (A nswer in integer)",
+      "options": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "difficulty": "Easy",
+      "year": null,
+      "marks": 1,
+      "negativeMarks": 0.33,
+      "createdAt": "2026-01-15T21:48:04.518Z",
+      "createdBy": 1
+    },
+    {
+      "id": 177,
+      "subject": "engineering-mathematics",
+      "topic": "probability",
+      "question": "A quadratic polynomial   ( 𝑥   −   𝛼 ) ( 𝑥   −   𝛽 )   over complex numbers   is said to be square  invariant if   ( 𝑥   −   𝛼 ) ( 𝑥   −   𝛽 )   =   ( 𝑥   −   𝛼 2 ) ( 𝑥   −   𝛽 2 ) . Suppose from the set of all  square invariant quadratic polynomials we choose one at random.  The probability that the roots of the chosen polynomial   are equal is __________.  ( rounded off to   one decimal place)\n\nComputer Science and Information   Technology   (CS 2 )  Organising Institute:   IIT   Roorkee   Page   48   of   48",
+      "options": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "difficulty": "Easy",
+      "year": null,
+      "marks": 1,
+      "negativeMarks": 0.33,
+      "createdAt": "2026-01-15T21:48:04.527Z",
+      "createdBy": 1
+    },
+    {
+      "id": 178,
+      "subject": "dbms",
+      "topic": "sql",
+      "question": "The unit interval   ( 0 , 1 )   is divided at a point chosen   uniformly distributed over   ( 0 , 1 )  in   ℝ   into two disjoint subintervals.  The expected length of the subinterval that contains   0 . 4   is   ___________ . (rounded  off   to two decimal places)",
+      "options": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "difficulty": "Easy",
+      "year": null,
+      "marks": 1,
+      "negativeMarks": 0.33,
+      "createdAt": "2026-01-15T21:48:04.535Z",
+      "createdBy": 1
+    }
+  ],
+  "tests": [
+    {
+      "id": 1,
+      "title": "GATE CS Mock Test #1",
+      "description": "Full-length practice test covering complete GATE CS syllabus",
+      "duration": 180,
+      "totalQuestions": 65,
+      "totalMarks": 100,
+      "difficulty": "Medium",
+      "type": "full",
+      "isActive": true
+    },
+    {
+      "id": 2,
+      "title": "Data Structures Mini Test",
+      "description": "Quick assessment of DS concepts - Arrays, Trees, Graphs",
+      "duration": 45,
+      "totalQuestions": 20,
+      "totalMarks": 30,
+      "difficulty": "Easy",
+      "type": "mini",
+      "isActive": true
+    },
+    {
+      "id": 3,
+      "title": "DBMS Sectional Test",
+      "description": "Complete DBMS section covering SQL, Normalization, Transactions",
+      "duration": 60,
+      "totalQuestions": 25,
+      "totalMarks": 40,
+      "difficulty": "Medium",
+      "type": "sectional",
+      "isActive": true
+    },
+    {
+      "id": 4,
+      "title": "Operating Systems Practice Test",
+      "description": "Process Management, Memory Management, Deadlocks",
+      "duration": 60,
+      "totalQuestions": 25,
+      "totalMarks": 40,
+      "difficulty": "Medium",
+      "type": "sectional",
+      "isActive": true
+    },
+    {
+      "id": 5,
+      "title": "Theory of Computation Test",
+      "description": "FA, PDA, Turing Machines, Decidability",
+      "duration": 45,
+      "totalQuestions": 20,
+      "totalMarks": 35,
+      "difficulty": "Hard",
+      "type": "sectional",
+      "isActive": true
+    },
+    {
+      "id": 6,
+      "title": "GATE CS Full Mock #2",
+      "description": "Complete GATE-level test with negative marking",
+      "duration": 180,
+      "totalQuestions": 65,
+      "totalMarks": 100,
+      "difficulty": "Hard",
+      "type": "full",
+      "isActive": true
+    }
+  ],
+  "userAttempts": [],
+  "testResults": [],
+  "bookmarks": []
+}
